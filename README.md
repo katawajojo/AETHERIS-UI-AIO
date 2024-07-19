@@ -11,6 +11,7 @@ This mod consolidates:
  - Split DPS AIO by Notlegendary and djUSA.GI
  - ÆTHERIS UI Chat Icons by djUSA.GI
  - ÆTHERIS UI Content Gauge Fixes by djUSA.GI
+ - ÆTHERIS UI Icon Frame Variations by Vec7rex and djUSA.GI
 
 Shout out to all the amazing modders that have worked on these projects! Without Vec7rex, as
 well as everyone else working on these projects, this mod would not have been possible!
