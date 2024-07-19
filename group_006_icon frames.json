@@ -11,8 +11,9 @@
       "Name": "Rounded ÆTHERIS Colors",
       "Description": "",
       "Files": {
-        "ui/uld/icona_frame_hr1.tex": "base\\ui\\uld\\icona_frame_hr1.tex",
-        "ui/uld/icona_recast_hr1.tex": "base\\ui\\uld\\icona_recast_hr1.tex"
+        "ui/uld/icona_recast_hr1.tex": "icon frames\\rounded\\icona_recast_hr1.tex",
+        "ui/uld/icona_frame_hr1.tex": "icon frames\\rounded\\Ætheris\\icona_frame_hr1.tex",
+        "ui/uld/icona_recast2_hr1.tex": "icon frames\\rounded\\Ætheris\\icona_recast2_hr1.tex"
       },
       "FileSwaps": {},
       "Manipulations": []
@@ -21,8 +22,9 @@
       "Name": "Rounded Default Colors",
       "Description": "",
       "Files": {
-        "ui/uld/icona_recast_hr1.tex": "base\\ui\\uld\\icona_recast_hr1.tex",
-        "ui/uld/icona_frame_hr1.tex": "icon frames\\rounded\\original colors\\icona_frame_hr1.tex"
+        "ui/uld/icona_recast_hr1.tex": "icon frames\\rounded\\icona_recast_hr1.tex",
+        "ui/uld/icona_frame_hr1.tex": "icon frames\\rounded\\original colors\\icona_frame_hr1.tex",
+        "ui/uld/icona_recast2_hr1.tex": "icon frames\\rounded\\original colors\\icona_recast2_hr1.tex"
       },
       "FileSwaps": {},
       "Manipulations": []
@@ -31,9 +33,9 @@
       "Name": "Square ÆTHERIS Colors",
       "Description": "",
       "Files": {
-        "ui/uld/icona_recast2_hr1.tex": "icon frames\\square\\icona_recast2_hr1.tex",
         "ui/uld/icona_recast_hr1.tex": "icon frames\\square\\icona_recast_hr1.tex",
-        "ui/uld/icona_frame_hr1.tex": "icon frames\\square\\Ætheris\\icona_frame_hr1.tex"
+        "ui/uld/icona_frame_hr1.tex": "icon frames\\square\\Ætheris\\icona_frame_hr1.tex",
+        "ui/uld/icona_recast2_hr1.tex": "icon frames\\square\\Ætheris\\icona_recast2_hr1.tex"
       },
       "FileSwaps": {},
       "Manipulations": []
@@ -42,9 +44,9 @@
       "Name": "Square Default Colors",
       "Description": "",
       "Files": {
-        "ui/uld/icona_recast2_hr1.tex": "icon frames\\square\\icona_recast2_hr1.tex",
         "ui/uld/icona_recast_hr1.tex": "icon frames\\square\\icona_recast_hr1.tex",
-        "ui/uld/icona_frame_hr1.tex": "icon frames\\square\\original colors\\icona_frame_hr1.tex"
+        "ui/uld/icona_frame_hr1.tex": "icon frames\\square\\original colors\\icona_frame_hr1.tex",
+        "ui/uld/icona_recast2_hr1.tex": "icon frames\\square\\original colors\\icona_recast2_hr1.tex"
       },
       "FileSwaps": {},
       "Manipulations": []
