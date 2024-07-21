@@ -1,0 +1,45 @@
+﻿{
+  "Version": 0,
+  "Name": "Enmity Info",
+  "Description": "",
+  "Image": "",
+  "Priority": 5,
+  "Type": "Single",
+  "DefaultSettings": 0,
+  "Options": [
+    {
+      "Name": "Default",
+      "Description": "",
+      "Files": {},
+      "FileSwaps": {},
+      "Manipulations": []
+    },
+    {
+      "Name": "Filled Bar",
+      "Description": "",
+      "Files": {
+        "ui/uld/enemylist_hr1.tex": "enmity\\filled-enemylist_hr1.tex"
+      },
+      "FileSwaps": {},
+      "Manipulations": []
+    },
+    {
+      "Name": "Solid Color Segments",
+      "Description": "",
+      "Files": {
+        "ui/uld/enemylist_hr1.tex": "enmity\\solid-enemylist_hr1.tex"
+      },
+      "FileSwaps": {},
+      "Manipulations": []
+    },
+    {
+      "Name": "Multicolored Segments",
+      "Description": "",
+      "Files": {
+        "ui/uld/enemylist_hr1.tex": "enmity\\multi-enemylist_hr1.tex"
+      },
+      "FileSwaps": {},
+      "Manipulations": []
+    }
+  ]
+}
