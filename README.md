@@ -13,6 +13,10 @@ Option Previews
 > 
 > >#### Split DPS
 ><img src="https://raw.githubusercontent.com/katawajojo/AETHERIS-UI-AIO/readme-objects/previews/jobs/split.png" width="250">
+## Job Bars + Gauges
+> >#### Zodiark | Hydaelyn
+><img src="https://raw.githubusercontent.com/katawajojo/AETHERIS-UI-AIO/readme-objects/previews/bars/zodiark.png" width="250"><img src="https://raw.githubusercontent.com/katawajojo/AETHERIS-UI-AIO/readme-objects/previews/bars/hydaelyn.png" width="250">
+>
 ## Icon Frames
 > >#### Rounded Frames: ÆTHERIS Theme | Original Colors
 > <img src="https://raw.githubusercontent.com/katawajojo/AETHERIS-UI-AIO/readme-objects/previews/frames/aetheris-rounded.png" width="250">
@@ -21,19 +25,20 @@ Option Previews
 > >#### Square Frames: ÆTHERIS Theme | Original Colors
 ><img src="https://raw.githubusercontent.com/katawajojo/AETHERIS-UI-AIO/readme-objects/previews/frames/aetheris-square.png" width="250">
 ><img src="https://raw.githubusercontent.com/katawajojo/AETHERIS-UI-AIO/readme-objects/previews/frames/og-square.png" width="250">
+>
 ## Minimap
->>#### Zodiark Circle + Square
+> >#### Zodiark Circle + Square
 ><img src="https://raw.githubusercontent.com/katawajojo/AETHERIS-UI-AIO/readme-objects/previews/maps/zodiark-circle.png" width="250"><img src="https://raw.githubusercontent.com/katawajojo/AETHERIS-UI-AIO/readme-objects/previews/maps/zodiark-square.png" width="250">
->>#### Hydaelyn Circle + Square
+> >#### Hydaelyn Circle + Square
 ><img src="https://raw.githubusercontent.com/katawajojo/AETHERIS-UI-AIO/readme-objects/previews/maps/hydaelyn-circle.png" width="250"><img src="https://raw.githubusercontent.com/katawajojo/AETHERIS-UI-AIO/readme-objects/previews/maps/hydaelyn-square.png" width="250">
 ## Limit Break & Content Gauge
->> #### Default
+> >#### Default
 ><img src="https://raw.githubusercontent.com/katawajojo/AETHERIS-UI-AIO/readme-objects/previews/lb/default.png" width="400">
 >
->> #### Zodiark
+> >#### Zodiark
 ><img src="https://raw.githubusercontent.com/katawajojo/AETHERIS-UI-AIO/readme-objects/previews/lb/zodiark.png" width="400">
 > 
->> #### Hydaelyn
+> >#### Hydaelyn
 ><img src="https://raw.githubusercontent.com/katawajojo/AETHERIS-UI-AIO/readme-objects/previews/lb/hydaelyn.png" width="400">
 
 ---
