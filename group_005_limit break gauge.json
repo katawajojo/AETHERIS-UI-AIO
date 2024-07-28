@@ -3,7 +3,7 @@
   "Name": "Limit Break Gauge",
   "Description": "This includes the Limit Break gauge, as well as the Content Gauge used during certain mechanics.",
   "Image": "",
-  "Priority": 0,
+  "Priority": 5,
   "Type": "Single",
   "DefaultSettings": 0,
   "Options": [
