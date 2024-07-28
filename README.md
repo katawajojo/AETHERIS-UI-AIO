@@ -4,6 +4,11 @@
 ---
 This modpack brings Vec7rex's tried-and-true [ÆTHERIS UI](https://www.xivmodarchive.com/modid/51534) theme together with other community mods to create a cohesive All In One ÆTHERIS experience.
 
+
+## Installation Note
+Currently, in Penumbra, you'll need to go to `Settings -> Advanced` and make sure `Auto Reduplicate UI Files on PMP Import` is <ins>***UNCHECKED***</ins>. If this option is enabled, it <ins>***WILL***</ins> break things in the theme.
+
+
 Option Previews
 -
 ## Job Icons
