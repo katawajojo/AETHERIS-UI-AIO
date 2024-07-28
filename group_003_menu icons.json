@@ -19,8 +19,6 @@
       "Description": "",
       "Files": {
         "ui/icon/000000/000001_hr1.tex": "menu icons\\black+white\\ui\\000001_hr1.tex",
-        "ui/icon/061000/061104_hr1.tex": "menu icons\\black+white\\ui\\061104_hr1.tex",
-        "ui/icon/061000/061105_hr1.tex": "menu icons\\black+white\\ui\\061105_hr1.tex",
         "ui/icon/000000/000010_hr1.tex": "menu icons\\black+white\\ui\\mainicon10.tex",
         "ui/icon/000000/000011_hr1.tex": "menu icons\\black+white\\ui\\mainicon11.tex",
         "ui/icon/000000/000013_hr1.tex": "menu icons\\black+white\\ui\\mainicon13.tex",
@@ -56,7 +54,6 @@
         "ui/icon/000000/000044_hr1.tex": "menu icons\\black+white\\ui\\mainicon44.tex",
         "ui/icon/000000/000045_hr1.tex": "menu icons\\black+white\\ui\\mainicon45.tex",
         "ui/icon/000000/000046_hr1.tex": "menu icons\\black+white\\ui\\mainicon46.tex",
-        "ui/icon/061000/061103_hr1.tex": "menu icons\\black+white\\ui\\mainicon46.tex",
         "ui/icon/000000/000047_hr1.tex": "menu icons\\black+white\\ui\\mainicon47.tex",
         "ui/icon/000000/000048_hr1.tex": "menu icons\\black+white\\ui\\mainicon48.tex",
         "ui/icon/000000/000049_hr1.tex": "menu icons\\black+white\\ui\\mainicon49.tex",
@@ -109,7 +106,10 @@
         "ui/icon/000000/000091_hr1.tex": "menu icons\\black+white\\ui\\mainicon91.tex",
         "ui/icon/000000/000092_hr1.tex": "menu icons\\black+white\\ui\\mainicon92.tex",
         "ui/icon/000000/000093_hr1.tex": "menu icons\\black+white\\ui\\mainicon93.tex",
-        "ui/icon/000000/000094_hr1.tex": "menu icons\\black+white\\ui\\mainicon94.tex"
+        "ui/icon/000000/000094_hr1.tex": "menu icons\\black+white\\ui\\mainicon94.tex",
+        "ui/icon/061000/061103_hr1.tex": "menu icons\\black+white\\ui\\mainicon46.tex",
+        "ui/icon/061000/061104_hr1.tex": "menu icons\\black+white\\ui\\061104_hr1.tex",
+        "ui/icon/061000/061105_hr1.tex": "menu icons\\black+white\\ui\\061105_hr1.tex"
       },
       "FileSwaps": {},
       "Manipulations": []
@@ -129,7 +129,10 @@
         "ui/icon/000000/000009_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000009_hr1.tex",
         "ui/icon/000000/000010_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000010_hr1.tex",
         "ui/icon/000000/000011_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000011_hr1.tex",
+		    "ui/icon/000000/000012_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000012_hr1.tex",
         "ui/icon/000000/000013_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000013_hr1.tex",
+		    "ui/icon/000000/000014_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000014_hr1.tex",
+		    "ui/icon/000000/000015_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000015_hr1.tex",
         "ui/icon/000000/000016_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000016_hr1.tex",
         "ui/icon/000000/000017_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000017_hr1.tex",
         "ui/icon/000000/000018_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000018_hr1.tex",
@@ -148,11 +151,13 @@
         "ui/icon/000000/000031_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000031_hr1.tex",
         "ui/icon/000000/000032_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000032_hr1.tex",
         "ui/icon/000000/000033_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000033_hr1.tex",
+		    "ui/icon/000000/000034_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000034_hr1.tex",
         "ui/icon/000000/000035_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000035_hr1.tex",
         "ui/icon/000000/000036_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000036_hr1.tex",
         "ui/icon/000000/000037_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000037_hr1.tex",
         "ui/icon/000000/000038_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000038_hr1.tex",
         "ui/icon/000000/000039_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000039_hr1.tex",
+		    "ui/icon/000000/000040_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000040_hr1.tex",
         "ui/icon/000000/000041_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000041_hr1.tex",
         "ui/icon/000000/000042_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000042_hr1.tex",
         "ui/icon/000000/000043_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000043_hr1.tex",
@@ -208,7 +213,11 @@
         "ui/icon/000000/000093_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000093_hr1.tex",
         "ui/icon/000000/000094_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000094_hr1.tex",
         "ui/icon/000000/000651_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000651_hr1.tex",
-        "ui/icon/000000/000654_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000654_hr1.tex"
+        "ui/icon/000000/000652_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000652_hr1.tex",
+		    "ui/icon/000000/000654_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000654_hr1.tex",
+		    "ui/icon/061000/061103_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\061103_hr1.tex",
+		    "ui/icon/061000/061104_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\061104_hr1.tex",
+		    "ui/icon/061000/061105_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\061105_hr1.tex"
       },
       "FileSwaps": {},
       "Manipulations": []
