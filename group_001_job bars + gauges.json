@@ -3,6 +3,7 @@
   "Name": "Job Bars + Gauges",
   "Description": "",
   "Image": "",
+  "Page": 0,
   "Priority": 1,
   "Type": "Single",
   "DefaultSettings": 0,

@@ -3,6 +3,7 @@
   "Name": "Enmity Info",
   "Description": "",
   "Image": "",
+  "Page": 0,
   "Priority": 7,
   "Type": "Single",
   "DefaultSettings": 0,

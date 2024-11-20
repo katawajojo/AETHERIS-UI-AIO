@@ -1,0 +1,30 @@
+﻿{
+  "Version": 0,
+  "Name": "Command Menu",
+  "Description": "",
+  "Image": "",
+  "Page": 0,
+  "Priority": 8,
+  "Type": "Single",
+  "DefaultSettings": 0,
+  "Options": [
+    {
+      "Name": "Consolidated Bar",
+      "Description": "",
+      "Files": {
+        "ui/uld/maincommand_icon_hr1.tex": "Command Menu\\Joined\\ui\\uld\\maincommand_icon_hr1.tex"
+      },
+      "FileSwaps": {},
+      "Manipulations": []
+    },
+    {
+      "Name": "Separated Icons",
+      "Description": "",
+      "Files": {
+        "ui/uld/maincommand_icon_hr1.tex": "Command Menu\\Separate\\ui\\uld\\maincommand_icon_hr1.tex"
+      },
+      "FileSwaps": {},
+      "Manipulations": []
+    }
+  ]
+}

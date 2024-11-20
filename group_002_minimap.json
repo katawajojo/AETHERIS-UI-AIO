@@ -3,6 +3,7 @@
   "Name": "Minimap",
   "Description": "",
   "Image": "",
+  "Page": 0,
   "Priority": 2,
   "Type": "Single",
   "DefaultSettings": 0,
