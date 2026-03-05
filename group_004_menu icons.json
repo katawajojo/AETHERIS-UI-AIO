@@ -10,10 +10,7 @@
   "Options": [
     {
       "Name": "Default",
-      "Description": "",
-      "Files": {},
-      "FileSwaps": {},
-      "Manipulations": []
+      "Description": ""
     },
     {
       "Name": "Dark + White (Enclave)",
@@ -108,12 +105,11 @@
         "ui/icon/000000/000092_hr1.tex": "menu icons\\black+white\\ui\\mainicon92.tex",
         "ui/icon/000000/000093_hr1.tex": "menu icons\\black+white\\ui\\mainicon93.tex",
         "ui/icon/000000/000094_hr1.tex": "menu icons\\black+white\\ui\\mainicon94.tex",
+        "ui/icon/000000/000095_hr1.tex": "menu icons\\black+white\\ui\\mainicon95.tex",
         "ui/icon/061000/061103_hr1.tex": "menu icons\\black+white\\ui\\mainicon46.tex",
         "ui/icon/061000/061104_hr1.tex": "menu icons\\black+white\\ui\\061104_hr1.tex",
         "ui/icon/061000/061105_hr1.tex": "menu icons\\black+white\\ui\\061105_hr1.tex"
-      },
-      "FileSwaps": {},
-      "Manipulations": []
+      }
     },
     {
       "Name": "ÆTHERIS-Themed (Dark + Light)",
@@ -213,15 +209,14 @@
         "ui/icon/000000/000092_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000092_hr1.tex",
         "ui/icon/000000/000093_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000093_hr1.tex",
         "ui/icon/000000/000094_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000094_hr1.tex",
+        "ui/icon/000000/000095_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000095_hr1.tex",
         "ui/icon/000000/000651_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000651_hr1.tex",
         "ui/icon/000000/000652_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000652_hr1.tex",
         "ui/icon/000000/000654_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000654_hr1.tex",
         "ui/icon/061000/061103_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\061103_hr1.tex",
         "ui/icon/061000/061104_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\061104_hr1.tex",
         "ui/icon/061000/061105_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\061105_hr1.tex"
-      },
-      "FileSwaps": {},
-      "Manipulations": []
+      }
     }
   ]
 }
