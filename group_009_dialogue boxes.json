@@ -12,22 +12,18 @@
       "Name": "ÆTHERIS Design",
       "Description": "",
       "Files": {
-        "ui/uld/battletalk_hr1.tex": "dialogue boxes\\ae new\\ui\\uld\\battletalk_hr1.tex",
-        "ui/uld/talk_basic_hr1.tex": "dialogue boxes\\ae new\\ui\\uld\\talk_basic_hr1.tex",
-        "ui/uld/talk_other_hr1.tex": "dialogue boxes\\ae new\\ui\\uld\\talk_other_hr1.tex"
-      },
-      "FileSwaps": {},
-      "Manipulations": []
+        "ui/uld/battletalk_hr1.tex": "Dialogue Boxes\\AE New\\battletalk_hr1.tex",
+        "ui/uld/talk_basic_hr1.tex": "Dialogue Boxes\\AE New\\talk_basic_hr1.tex",
+        "ui/uld/talk_other_hr1.tex": "Dialogue Boxes\\AE New\\talk_other_hr1.tex"
+      }
     },
     {
       "Name": "Default Design",
       "Description": "",
       "Files": {
-        "ui/uld/battletalk_hr1.tex": "dialogue boxes\\ffxiv og\\ui\\uld\\battletalk_hr1.tex",
-        "ui/uld/talk_other_hr1.tex": "dialogue boxes\\ffxiv og\\ui\\uld\\talk_other_hr1.tex"
-      },
-      "FileSwaps": {},
-      "Manipulations": []
+        "ui/uld/battletalk_hr1.tex": "Dialogue Boxes\\FFXIV OG\\battletalk_hr1.tex",
+        "ui/uld/talk_other_hr1.tex": "Dialogue Boxes\\FFXIV OG\\talk_other_hr1.tex"
+      }
     }
   ]
 }

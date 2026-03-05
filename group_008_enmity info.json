@@ -10,37 +10,35 @@
   "Options": [
     {
       "Name": "Default",
+      "Description": ""
+    },
+    {
+      "Name": "ÆTHERIS Classic",
       "Description": "",
-      "Files": {},
-      "FileSwaps": {},
-      "Manipulations": []
+      "Files": {
+        "ui/uld/enemylist_hr1.tex": "Enmity\\ae-classic-enemylist_hr1.tex"
+      }
     },
     {
       "Name": "Filled Bar",
       "Description": "",
       "Files": {
         "ui/uld/enemylist_hr1.tex": "enmity\\filled-enemylist_hr1.tex"
-      },
-      "FileSwaps": {},
-      "Manipulations": []
+      }
     },
     {
       "Name": "Solid Color Segments",
       "Description": "",
       "Files": {
         "ui/uld/enemylist_hr1.tex": "enmity\\solid-enemylist_hr1.tex"
-      },
-      "FileSwaps": {},
-      "Manipulations": []
+      }
     },
     {
       "Name": "Multicolored Segments",
       "Description": "",
       "Files": {
         "ui/uld/enemylist_hr1.tex": "enmity\\multi-enemylist_hr1.tex"
-      },
-      "FileSwaps": {},
-      "Manipulations": []
+      }
     }
   ]
 }

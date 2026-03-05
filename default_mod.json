@@ -281,6 +281,7 @@
     "ui/uld/harpoonwindowa_selected_v_hr1.tex": "Base\\ui\\uld\\harpoonwindowa_selected_v_hr1.tex",
     "ui/uld/harpoonwindowa_v_hr1.tex": "Base\\ui\\uld\\harpoonwindowa_v_hr1.tex",
     "ui/uld/housinggoods_hr1.tex": "Base\\ui\\uld\\housinggoods_hr1.tex",
+    "ui/uld/housing_mate_hr1.tex": "Base\\ui\\uld\\housing_mate_hr1.tex",
     "ui/uld/housing_travellersnote_hr1.tex": "Base\\ui\\uld\\housing_travellersnote_hr1.tex",
     "ui/uld/hudlayout_hr1.tex": "Base\\ui\\uld\\hudlayout_hr1.tex",
     "ui/uld/hwdgathererinspection_hr1.tex": "Base\\ui\\uld\\hwdgathererinspection_hr1.tex",
@@ -385,6 +386,7 @@
     "ui/uld/tripletriadpanel_tournament_hr1.tex": "Base\\ui\\uld\\tripletriadpanel_tournament_hr1.tex",
     "ui/uld/vvdfindercharactericon_hr1.tex": "Base\\ui\\uld\\vvdfindercharactericon_hr1.tex",
     "ui/uld/vvdfindercharacter_hr1.tex": "Base\\ui\\uld\\vvdfindercharacter_hr1.tex",
+    "ui/uld/vvdfindertitle_hr1.tex": "Base\\ui\\uld\\vvdfindertitle_hr1.tex",
     "ui/uld/vvdfinder_hr1.tex": "Base\\ui\\uld\\vvdfinder_hr1.tex",
     "ui/uld/weblauncherbg_hr1.tex": "Base\\ui\\uld\\weblauncherbg_hr1.tex",
     "ui/uld/weblauncherwindowfocus_hr1.tex": "Base\\ui\\uld\\weblauncherwindowfocus_hr1.tex",
@@ -419,8 +421,18 @@
     "ui/uld/windowpvp_bgselected_h_hr1.tex": "Base\\ui\\uld\\windowpvp_bgselected_h_hr1.tex",
     "ui/uld/windowpvp_bgselected_v_hr1.tex": "Base\\ui\\uld\\windowpvp_bgselected_v_hr1.tex",
     "ui/uld/windowpvp_button_hr1.tex": "Base\\ui\\uld\\windowpvp_button_hr1.tex",
-    "ui/uld/windowpvp_line_hr1.tex": "Base\\ui\\uld\\windowpvp_line_hr1.tex"
-  },
-  "FileSwaps": {},
-  "Manipulations": []
+    "ui/uld/windowpvp_line_hr1.tex": "Base\\ui\\uld\\windowpvp_line_hr1.tex",
+    "ui/uld/wkshudline_bghv_hr1.tex": "Base\\ui\\uld\\wkshudline_bghv_hr1.tex",
+    "ui/uld/wkshudline_bgh_hr1.tex": "Base\\ui\\uld\\wkshudline_bgh_hr1.tex",
+    "ui/uld/wkshudline_bgv_hr1.tex": "Base\\ui\\uld\\wkshudline_bgv_hr1.tex",
+    "ui/uld/wkshudline_corner_hr1.tex": "Base\\ui\\uld\\wkshudline_corner_hr1.tex",
+    "ui/uld/wkshud_hr1.tex": "Base\\ui\\uld\\wkshud_hr1.tex",
+    "ui/uld/wkslistseparator_hr1.tex": "Base\\ui\\uld\\wkslistseparator_hr1.tex",
+    "ui/uld/wksmission_hr1.tex": "Base\\ui\\uld\\wksmission_hr1.tex",
+    "ui/uld/wkswindoweff2_hr1.tex": "Base\\ui\\uld\\wkswindoweff2_hr1.tex",
+    "ui/uld/wkswindowframe2_hr1.tex": "Base\\ui\\uld\\wkswindowframe2_hr1.tex",
+    "ui/uld/wkswindowframe_hr1.tex": "Base\\ui\\uld\\wkswindowframe_hr1.tex",
+    "ui/uld/wkswindow_hr1.tex": "Base\\ui\\uld\\wkswindow_hr1.tex",
+    "ae-classic-enemylist_hr1.tex": "Enmity\\ae-classic-enemylist_hr1.tex"
+  }
 }
