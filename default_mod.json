@@ -1,4 +1,4 @@
-﻿{
+{
   "Version": 0,
   "Files": {
     "common/font/fonticon_lys.tex": "Base\\common\\font\\fonticon_Lys.tex",
@@ -119,6 +119,8 @@
     "ui/icon/062000/062043_hr1.tex": "Base\\ui\\icon\\062000\\062043_hr1.tex",
     "ui/icon/062000/062044_hr1.tex": "Base\\ui\\icon\\062000\\062044_hr1.tex",
     "ui/icon/062000/062045_hr1.tex": "Base\\ui\\icon\\062000\\062045_hr1.tex",
+    "ui/icon/062000/062046_hr1.tex": "Base\\ui\\icon\\062000\\062046_hr1.tex",
+    "ui/icon/062000/062047_hr1.tex": "Base\\ui\\icon\\062000\\062047_hr1.tex",
     "ui/icon/062000/062201_hr1.tex": "Base\\ui\\icon\\062000\\062201_hr1.tex",
     "ui/icon/062000/062202_hr1.tex": "Base\\ui\\icon\\062000\\062202_hr1.tex",
     "ui/icon/062000/062203_hr1.tex": "Base\\ui\\icon\\062000\\062203_hr1.tex",
@@ -171,6 +173,7 @@
     "ui/icon/062000/062840_hr1.tex": "Base\\ui\\icon\\062000\\062840_hr1.tex",
     "ui/icon/062000/062841_hr1.tex": "Base\\ui\\icon\\062000\\062841_hr1.tex",
     "ui/icon/062000/062842_hr1.tex": "Base\\ui\\icon\\062000\\062842_hr1.tex",
+    "ui/icon/062000/062843_hr1.tex": "Base\\ui\\icon\\062000\\062843_hr1.tex",
     "ui/icon/065000/065002_hr1.tex": "Base\\ui\\icon\\065000\\065002_hr1.tex",
     "ui/icon/072000/072250_hr1.tex": "Base\\ui\\icon\\072000\\072250_hr1.tex",
     "ui/icon/082000/082021_hr1.tex": "Base\\ui\\icon\\082000\\082021_hr1.tex",
@@ -226,6 +229,7 @@
     "ui/uld/buttona_custom_hr1.tex": "Base\\ui\\uld\\buttona_custom_hr1.tex",
     "ui/uld/buttona_hr1.tex": "Base\\ui\\uld\\buttona_hr1.tex",
     "ui/uld/buttona_saveload_hr1.tex": "Base\\ui\\uld\\buttona_hr1.tex",
+    "ui/uld/buttona_link_hr1.tex": "Base\\ui\\uld\\buttona_link_hr1.tex",
     "ui/uld/buttonb_hr1.tex": "Base\\ui\\uld\\buttonb_hr1.tex",
     "ui/uld/camerasettings_hr1.tex": "Base\\ui\\uld\\camerasettings_hr1.tex",
     "ui/uld/character.tex": "Base\\ui\\uld\\character.tex",

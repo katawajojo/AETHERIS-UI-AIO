@@ -1,11 +1,9 @@
-﻿{
-  "FileVersion": 3,
-  "Name": "ÆTHERIS UI AIO",
-  "Author": "Vec7rex, Notlegendary, djUSA.GI, Enclave, Mek, bonsaibnuuy",
-  "Description": "This modpack brings Vec7rex's tried-and-true ÆTHERIS UI theme together with other\ncommunity mods to create a cohesive All In One ÆTHERIS experience.\n\nThis mod consolidates:\n # ÆTHERIS UI by Vec7rex\n # ÆTHERIS UI Minimaps by Vec7rex\n # ÆTHERIS UI Job Bars + Gauges by Vec7rex\n # Dark & White Menu Icons by Enclave\n # ÆTHERIS & White Menu Icons (Based on Dark & White) by Notlegendary and Enclave\n # ÆTHERIS UI Limit Break Gauge Alternatives by Notlegendary\n # Split DPS AIO by Notlegendary and djUSA.GI\n # ÆTHERIS UI Chat Icons by djUSA.GI\n # ÆTHERIS UI Content Gauge Fixes by djUSA.GI\n # ÆTHERIS UI Icon Frame Variations by Vec7rex and djUSA.GI\n\nShout out to all the amazing modders that have worked on these projects! Without Vec7rex, as\nwell as everyone else working on these projects, this mod would not have been possible!",
-  "Image": "",
-  "Version": "1.4.0",
-  "Website": "https://github.com/katawajojo/AETHERIS-UI-AIO",
-  "ModTags": [],
-  "DefaultPreferredItems": []
+{
+    "FileVersion": 3,
+    "Name": "\u00C6THERIS UI AIO",
+    "Author": "Vec7rex, Notlegendary, djUSA.GI, Enclave, Mek, bonsaibnuuy",
+    "Description": "This modpack brings Vec7rex\u0027s tried-and-true \u00C6THERIS UI theme together with other\ncommunity mods to create a cohesive All In One \u00C6THERIS experience.\n\nThis mod consolidates:\n # \u00C6THERIS UI by Vec7rex\n # \u00C6THERIS UI Minimaps by Vec7rex\n # \u00C6THERIS UI Job Bars \u002B Gauges by Vec7rex\n # Dark \u0026 White Menu Icons by Enclave\n # \u00C6THERIS \u0026 White Menu Icons (Based on Dark \u0026 White) by Notlegendary and Enclave\n # \u00C6THERIS UI Limit Break Gauge Alternatives by Notlegendary\n # Split DPS AIO by Notlegendary and djUSA.GI\n # \u00C6THERIS UI Chat Icons by djUSA.GI\n # \u00C6THERIS UI Content Gauge Fixes by djUSA.GI\n # \u00C6THERIS UI Icon Frame Variations by Vec7rex and djUSA.GI\n\nShout out to all the amazing modders that have worked on these projects! Without Vec7rex, as\nwell as everyone else working on these projects, this mod would not have been possible!",
+    "Image": "",
+    "Version": "1.5.0",
+    "Website": "https://github.com/katawajojo/AETHERIS-UI-AIO"
 }
