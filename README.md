@@ -13,9 +13,9 @@ This modpack brings Vec7rex's tried-and-true [ÆTHERIS UI](https://www.xivmodarc
 ## Installation Note
 
 > [!IMPORTANT]
-> With the update to Penumbra's handling of mod metadata and groups within mods, the files for this mod have been re-organized as well as the options presented in the mod itself. This should hopefully resolve the need for disabling Penumbra's "Auto Reduplicate UI Files" option when importing. We've also renamed the directories in this mod to remove the Æ glyph from paths, so this should fix UTF-8 issues some Linux users were running into.
+> Notice: With the update to Penumbra's handling of mod metadata and groups within mods, the files for this mod have been re-organized as well as the options presented in the mod itself. This should hopefully resolve the need for disabling Penumbra's "Auto Reduplicate UI Files" option when importing. We've also renamed the directories in this mod to remove the Æ glyph from paths, so this should fix UTF-8 issues some Linux users were running into.
 >
-> If you're upgrading, we recommend making note of your current options and deleting your current install. Failure to do this may result in the mod being imported under a different name (i.e. "ÆTHERIS UI AIO (2)"). Additionally, you'll wind up still having an older version installed and active. Additionally, re-enable the `Auto Reduplicate UI Files on PMP Import` found in Penumbra's `Settings -> Advanced`. 
+> If you're upgrading, we recommend making note of your current options and deleting your current install. Failure to do this may result in the mod being imported under a different name (i.e. "ÆTHERIS UI AIO (2)"). Additionally, you'll wind up still having an older version installed and active. Users should also be safe to re-enable the `Auto Reduplicate UI Files on PMP Import` found in Penumbra's `Settings -> Advanced`. 
 
 
 Option Previews
