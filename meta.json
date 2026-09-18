@@ -1,12 +1,17 @@
 {
 	"FileVersion": 4,
 	"Identifier": "91403659-fbb1-4144-add4-5cef4f938cf8",
-	"LastWrite": "2026-09-16T04:03:29.8229627Z",
+	"LastWrite": "2026-09-18T02:40:39.951731Z",
 	"Name": "ÆTHERIS UI AIO",
 	"Author": "Vec7rex, Notlegendary, djUSA.GI, Enclave, Mek, bonsaibnuuy",
 	"Description": "This modpack brings Vec7rex's tried-and-true ÆTHERIS UI theme together with other\ncommunity mods to create a cohesive All In One ÆTHERIS experience.\n\nThis mod consolidates:\n # ÆTHERIS UI by Vec7rex\n # ÆTHERIS UI Minimaps by Vec7rex\n # ÆTHERIS UI Job Bars + Gauges by Vec7rex\n # Dark & White Menu Icons by Enclave\n # ÆTHERIS & White Menu Icons (Based on Dark & White) by Notlegendary and Enclave\n # ÆTHERIS UI Limit Break Gauge Alternatives by Notlegendary\n # Split DPS AIO by Notlegendary and djUSA.GI\n # ÆTHERIS UI Chat Icons by djUSA.GI\n # ÆTHERIS UI Content Gauge Fixes by djUSA.GI\n # ÆTHERIS UI Icon Frame Variations by Vec7rex and djUSA.GI\n\nShout out to all the amazing modders that have worked on these projects! Without Vec7rex, as\nwell as everyone else working on these projects, this mod would not have been possible!",
 	"Version": "1.5.3",
 	"Website": "https://github.com/katawajojo/AETHERIS-UI-AIO",
+	"PageNames": {
+		"0": "Job Bars + Gauges",
+		"1": "Job Icons + Frames",
+		"2": "Additional Options"
+	},
 	"DefaultData": {
 		"Files": {
 			"ui/icon/000000/000035_hr1.tex": "base\\ui\\icon\\000000\\000035_hr1.tex",
@@ -254,7 +259,6 @@
 			"ui/uld/dragtargeta_hr1.tex": "base\\ui\\uld\\dragtargeta_hr1.tex",
 			"ui/uld/dropdowna_hr1.tex": "base\\ui\\uld\\dropdowna_hr1.tex",
 			"ui/uld/emotecategory_hr1.tex": "base\\ui\\uld\\emotecategory_hr1.tex",
-			"ui/uld/enemylist_hr1.tex": "base\\ui\\uld\\enemylist_hr1.tex",
 			"ui/uld/eurekaelementalhud_hr1.tex": "base\\ui\\uld\\eurekaelementalhud_hr1.tex",
 			"ui/uld/eurekalogosaetherlist_hr1.tex": "base\\ui\\uld\\eurekalogosaetherlist_hr1.tex",
 			"ui/uld/explorationship_hr1.tex": "base\\ui\\uld\\explorationship_hr1.tex",
@@ -415,8 +419,7 @@
 			"ui/uld/windowpvp_bgselected_h_hr1.tex": "base\\ui\\uld\\windowpvp_bgselected_h_hr1.tex",
 			"ui/uld/windowpvp_bgselected_v_hr1.tex": "base\\ui\\uld\\windowpvp_bgselected_v_hr1.tex",
 			"ui/uld/windowpvp_button_hr1.tex": "base\\ui\\uld\\windowpvp_button_hr1.tex",
-			"ui/uld/windowpvp_line_hr1.tex": "base\\ui\\uld\\windowpvp_line_hr1.tex",
-			"ae-classic-enemylist_hr1.tex": "enmity\\ae-classic-enemylist_hr1.tex"
+			"ui/uld/windowpvp_line_hr1.tex": "base\\ui\\uld\\windowpvp_line_hr1.tex"
 		}
 	},
 	"Groups": [
@@ -507,7 +510,7 @@
 			"Id": "c38004ba-44b3-4dce-b83b-dda005abe34d",
 			"Name": "Limit Break Gauge",
 			"Description": "This includes the Limit Break gauge, as well as the Content Gauge used during certain mechanics.",
-			"Priority": 7,
+			"Priority": 3,
 			"ParentSetting": "41e663a4-1d4d-43d4-b4e8-67eb996d6b0f",
 			"Options": [
 				{
@@ -543,20 +546,20 @@
 			"Layout": [
 				"Space"
 			],
-			"Priority": 3,
+			"Priority": 4,
 			"Options": [
 				{
 					"Id": "a90c367d-6dea-44fc-a5b2-851517e54ed9",
 					"Name": "Consolidated Bar",
 					"Files": {
-						"ui/uld/maincommand_icon_hr1.tex": "command menu\\joined\\ui\\uld\\maincommand_icon_hr1.tex"
+						"ui/uld/maincommand_icon_hr1.tex": "command menu\\maincommand_icon_hr1-joined.tex"
 					}
 				},
 				{
 					"Id": "14fbb11d-eb4d-428e-8a8b-eec6a4476b95",
 					"Name": "Separated Icons",
 					"Files": {
-						"ui/uld/maincommand_icon_hr1.tex": "command menu\\separate\\ui\\uld\\maincommand_icon_hr1.tex"
+						"ui/uld/maincommand_icon_hr1.tex": "command menu\\maincommand_icon_hr1-split.tex"
 					}
 				}
 			]
@@ -566,33 +569,306 @@
 			"Id": "260cc7ba-890a-4130-922a-f7b215bfdab3",
 			"Name": "Icons and Frames",
 			"Priority": 5,
+			"Page": 1
+		},
+		{
+			"Type": "Single",
+			"Id": "fa4abe54-b904-4717-92ae-7c7ba4de1467",
+			"Name": "Menu Icons",
+			"Priority": 6,
+			"Page": 1,
+			"ParentSetting": "260cc7ba-890a-4130-922a-f7b215bfdab3",
 			"Options": [
 				{
-					"Id": "6a791a84-d0e8-43c2-910f-513ac3bc883e",
-					"Name": "Split DPS"
+					"Id": "484e635f-d23e-4be1-84ed-2a0b6047f4bf",
+					"Name": "Default"
 				},
 				{
-					"Id": "00425a12-8fee-4a51-8ba6-3be1d86278d6",
-					"Name": "Square Icon Frames"
+					"Id": "0127d729-780e-4dbf-bba1-e1a9fdbaaad3",
+					"Name": "Dark + White (Enclave)",
+					"Files": {
+						"ui/icon/000000/000001_hr1.tex": "menu icons\\black+white\\000001_hr1.tex",
+						"ui/icon/000000/000010_hr1.tex": "menu icons\\black+white\\mainicon10.tex",
+						"ui/icon/000000/000011_hr1.tex": "menu icons\\black+white\\mainicon11.tex",
+						"ui/icon/000000/000013_hr1.tex": "menu icons\\black+white\\mainicon13.tex",
+						"ui/icon/000000/000016_hr1.tex": "menu icons\\black+white\\mainicon16.tex",
+						"ui/icon/000000/000017_hr1.tex": "menu icons\\black+white\\mainicon17.tex",
+						"ui/icon/000000/000018_hr1.tex": "menu icons\\black+white\\mainicon18.tex",
+						"ui/icon/000000/000019_hr1.tex": "menu icons\\black+white\\mainicon19.tex",
+						"ui/icon/000000/000002_hr1.tex": "menu icons\\black+white\\mainicon2.tex",
+						"ui/icon/000000/000020_hr1.tex": "menu icons\\black+white\\mainicon20.tex",
+						"ui/icon/000000/000021_hr1.tex": "menu icons\\black+white\\mainicon21.tex",
+						"ui/icon/000000/000022_hr1.tex": "menu icons\\black+white\\mainicon22.tex",
+						"ui/icon/000000/000023_hr1.tex": "menu icons\\black+white\\mainicon23.tex",
+						"ui/icon/000000/000024_hr1.tex": "menu icons\\black+white\\mainicon24.tex",
+						"ui/icon/000000/000025_hr1.tex": "menu icons\\black+white\\mainicon25.tex",
+						"ui/icon/000000/000026_hr1.tex": "menu icons\\black+white\\mainicon26.tex",
+						"ui/icon/000000/000027_hr1.tex": "menu icons\\black+white\\mainicon27.tex",
+						"ui/icon/000000/000028_hr1.tex": "menu icons\\black+white\\mainicon28.tex",
+						"ui/icon/000000/000029_hr1.tex": "menu icons\\black+white\\mainicon29.tex",
+						"ui/icon/000000/000003_hr1.tex": "menu icons\\black+white\\mainicon3.tex",
+						"ui/icon/000000/000030_hr1.tex": "menu icons\\black+white\\mainicon30.tex",
+						"ui/icon/000000/000031_hr1.tex": "menu icons\\black+white\\mainicon31.tex",
+						"ui/icon/000000/000032_hr1.tex": "menu icons\\black+white\\mainicon32.tex",
+						"ui/icon/000000/000033_hr1.tex": "menu icons\\black+white\\mainicon33.tex",
+						"ui/icon/000000/000035_hr1.tex": "menu icons\\black+white\\mainicon35.tex",
+						"ui/icon/000000/000036_hr1.tex": "menu icons\\black+white\\mainicon36.tex",
+						"ui/icon/000000/000037_hr1.tex": "menu icons\\black+white\\mainicon37.tex",
+						"ui/icon/000000/000038_hr1.tex": "menu icons\\black+white\\mainicon38.tex",
+						"ui/icon/000000/000039_hr1.tex": "menu icons\\black+white\\mainicon39.tex",
+						"ui/icon/000000/000004_hr1.tex": "menu icons\\black+white\\mainicon4.tex",
+						"ui/icon/000000/000041_hr1.tex": "menu icons\\black+white\\mainicon41.tex",
+						"ui/icon/000000/000042_hr1.tex": "menu icons\\black+white\\mainicon42.tex",
+						"ui/icon/000000/000043_hr1.tex": "menu icons\\black+white\\mainicon43.tex",
+						"ui/icon/000000/000044_hr1.tex": "menu icons\\black+white\\mainicon44.tex",
+						"ui/icon/000000/000045_hr1.tex": "menu icons\\black+white\\mainicon45.tex",
+						"ui/icon/000000/000046_hr1.tex": "menu icons\\black+white\\mainicon46.tex",
+						"ui/icon/000000/000047_hr1.tex": "menu icons\\black+white\\mainicon47.tex",
+						"ui/icon/000000/000048_hr1.tex": "menu icons\\black+white\\mainicon48.tex",
+						"ui/icon/000000/000049_hr1.tex": "menu icons\\black+white\\mainicon49.tex",
+						"ui/icon/000000/000005_hr1.tex": "menu icons\\black+white\\mainicon5.tex",
+						"ui/icon/000000/000050_hr1.tex": "menu icons\\black+white\\mainicon50.tex",
+						"ui/icon/000000/000051_hr1.tex": "menu icons\\black+white\\mainicon51.tex",
+						"ui/icon/000000/000052_hr1.tex": "menu icons\\black+white\\mainicon52.tex",
+						"ui/icon/000000/000053_hr1.tex": "menu icons\\black+white\\mainicon53.tex",
+						"ui/icon/000000/000054_hr1.tex": "menu icons\\black+white\\mainicon54.tex",
+						"ui/icon/000000/000055_hr1.tex": "menu icons\\black+white\\mainicon55.tex",
+						"ui/icon/000000/000056_hr1.tex": "menu icons\\black+white\\mainicon56.tex",
+						"ui/icon/000000/000057_hr1.tex": "menu icons\\black+white\\mainicon57.tex",
+						"ui/icon/000000/000058_hr1.tex": "menu icons\\black+white\\mainicon58.tex",
+						"ui/icon/000000/000059_hr1.tex": "menu icons\\black+white\\mainicon59.tex",
+						"ui/icon/000000/000006_hr1.tex": "menu icons\\black+white\\mainicon6.tex",
+						"ui/icon/000000/000060_hr1.tex": "menu icons\\black+white\\mainicon60.tex",
+						"ui/icon/000000/000061_hr1.tex": "menu icons\\black+white\\mainicon61.tex",
+						"ui/icon/000000/000062_hr1.tex": "menu icons\\black+white\\mainicon62.tex",
+						"ui/icon/000000/000063_hr1.tex": "menu icons\\black+white\\mainicon63.tex",
+						"ui/icon/000000/000064_hr1.tex": "menu icons\\black+white\\mainicon64.tex",
+						"ui/icon/000000/000065_hr1.tex": "menu icons\\black+white\\mainicon65.tex",
+						"ui/icon/000000/000066_hr1.tex": "menu icons\\black+white\\mainicon66.tex",
+						"ui/icon/000000/000067_hr1.tex": "menu icons\\black+white\\mainicon67.tex",
+						"ui/icon/000000/000068_hr1.tex": "menu icons\\black+white\\mainicon68.tex",
+						"ui/icon/000000/000069_hr1.tex": "menu icons\\black+white\\mainicon69.tex",
+						"ui/icon/000000/000007_hr1.tex": "menu icons\\black+white\\mainicon7.tex",
+						"ui/icon/000000/000070_hr1.tex": "menu icons\\black+white\\mainicon70.tex",
+						"ui/icon/000000/000071_hr1.tex": "menu icons\\black+white\\mainicon71.tex",
+						"ui/icon/000000/000072_hr1.tex": "menu icons\\black+white\\mainicon72.tex",
+						"ui/icon/000000/000073_hr1.tex": "menu icons\\black+white\\mainicon73.tex",
+						"ui/icon/000000/000074_hr1.tex": "menu icons\\black+white\\mainicon74.tex",
+						"ui/icon/000000/000075_hr1.tex": "menu icons\\black+white\\mainicon75.tex",
+						"ui/icon/000000/000076_hr1.tex": "menu icons\\black+white\\mainicon76.tex",
+						"ui/icon/000000/000077_hr1.tex": "menu icons\\black+white\\mainicon77.tex",
+						"ui/icon/000000/000078_hr1.tex": "menu icons\\black+white\\mainicon78.tex",
+						"ui/icon/000000/000079_hr1.tex": "menu icons\\black+white\\mainicon79.tex",
+						"ui/icon/000000/000008_hr1.tex": "menu icons\\black+white\\mainicon8.tex",
+						"ui/icon/000000/000080_hr1.tex": "menu icons\\black+white\\mainicon80.tex",
+						"ui/icon/000000/000081_hr1.tex": "menu icons\\black+white\\mainicon81.tex",
+						"ui/icon/000000/000082_hr1.tex": "menu icons\\black+white\\mainicon82.tex",
+						"ui/icon/000000/000083_hr1.tex": "menu icons\\black+white\\mainicon83.tex",
+						"ui/icon/000000/000084_hr1.tex": "menu icons\\black+white\\mainicon84.tex",
+						"ui/icon/000000/000085_hr1.tex": "menu icons\\black+white\\mainicon85.tex",
+						"ui/icon/000000/000086_hr1.tex": "menu icons\\black+white\\mainicon86.tex",
+						"ui/icon/000000/000087_hr1.tex": "menu icons\\black+white\\mainicon87.tex",
+						"ui/icon/000000/000088_hr1.tex": "menu icons\\black+white\\mainicon88.tex",
+						"ui/icon/000000/000089_hr1.tex": "menu icons\\black+white\\mainicon89.tex",
+						"ui/icon/000000/000009_hr1.tex": "menu icons\\black+white\\mainicon9.tex",
+						"ui/icon/000000/000090_hr1.tex": "menu icons\\black+white\\mainicon90.tex",
+						"ui/icon/000000/000091_hr1.tex": "menu icons\\black+white\\mainicon91.tex",
+						"ui/icon/000000/000092_hr1.tex": "menu icons\\black+white\\mainicon92.tex",
+						"ui/icon/000000/000093_hr1.tex": "menu icons\\black+white\\mainicon93.tex",
+						"ui/icon/000000/000094_hr1.tex": "menu icons\\black+white\\mainicon94.tex",
+						"ui/icon/000000/000095_hr1.tex": "menu icons\\black+white\\mainicon95.tex",
+						"ui/icon/000000/000096_hr1.tex": "menu icons\\black+white\\mainicon96.tex",
+						"ui/icon/000000/000097_hr1.tex": "menu icons\\black+white\\mainicon97.tex",
+						"ui/icon/061000/061103_hr1.tex": "menu icons\\black+white\\mainicon46.tex",
+						"ui/icon/061000/061104_hr1.tex": "menu icons\\black+white\\061104_hr1.tex",
+						"ui/icon/061000/061105_hr1.tex": "menu icons\\black+white\\061105_hr1.tex"
+					}
+				},
+				{
+					"Id": "29156f6c-bbdc-4a41-937c-984bc74ccd3c",
+					"Name": "ÆTHERIS-Themed (Dark + Light)",
+					"Files": {
+						"ui/icon/000000/000001_hr1.tex": "menu icons\\aetheris\\000001_hr1.tex",
+						"ui/icon/000000/000002_hr1.tex": "menu icons\\aetheris\\000002_hr1.tex",
+						"ui/icon/000000/000003_hr1.tex": "menu icons\\aetheris\\000003_hr1.tex",
+						"ui/icon/000000/000004_hr1.tex": "menu icons\\aetheris\\000004_hr1.tex",
+						"ui/icon/000000/000005_hr1.tex": "menu icons\\aetheris\\000005_hr1.tex",
+						"ui/icon/000000/000006_hr1.tex": "menu icons\\aetheris\\000006_hr1.tex",
+						"ui/icon/000000/000007_hr1.tex": "menu icons\\aetheris\\000007_hr1.tex",
+						"ui/icon/000000/000008_hr1.tex": "menu icons\\aetheris\\000008_hr1.tex",
+						"ui/icon/000000/000009_hr1.tex": "menu icons\\aetheris\\000009_hr1.tex",
+						"ui/icon/000000/000010_hr1.tex": "menu icons\\aetheris\\000010_hr1.tex",
+						"ui/icon/000000/000011_hr1.tex": "menu icons\\aetheris\\000011_hr1.tex",
+						"ui/icon/000000/000012_hr1.tex": "menu icons\\aetheris\\000012_hr1.tex",
+						"ui/icon/000000/000013_hr1.tex": "menu icons\\aetheris\\000013_hr1.tex",
+						"ui/icon/000000/000014_hr1.tex": "menu icons\\aetheris\\000014_hr1.tex",
+						"ui/icon/000000/000015_hr1.tex": "menu icons\\aetheris\\000015_hr1.tex",
+						"ui/icon/000000/000016_hr1.tex": "menu icons\\aetheris\\000016_hr1.tex",
+						"ui/icon/000000/000017_hr1.tex": "menu icons\\aetheris\\000017_hr1.tex",
+						"ui/icon/000000/000018_hr1.tex": "menu icons\\aetheris\\000018_hr1.tex",
+						"ui/icon/000000/000019_hr1.tex": "menu icons\\aetheris\\000019_hr1.tex",
+						"ui/icon/000000/000020_hr1.tex": "menu icons\\aetheris\\000020_hr1.tex",
+						"ui/icon/000000/000021_hr1.tex": "menu icons\\aetheris\\000021_hr1.tex",
+						"ui/icon/000000/000022_hr1.tex": "menu icons\\aetheris\\000022_hr1.tex",
+						"ui/icon/000000/000023_hr1.tex": "menu icons\\aetheris\\000023_hr1.tex",
+						"ui/icon/000000/000024_hr1.tex": "menu icons\\aetheris\\000024_hr1.tex",
+						"ui/icon/000000/000025_hr1.tex": "menu icons\\aetheris\\000025_hr1.tex",
+						"ui/icon/000000/000026_hr1.tex": "menu icons\\aetheris\\000026_hr1.tex",
+						"ui/icon/000000/000027_hr1.tex": "menu icons\\aetheris\\000027_hr1.tex",
+						"ui/icon/000000/000028_hr1.tex": "menu icons\\aetheris\\000028_hr1.tex",
+						"ui/icon/000000/000029_hr1.tex": "menu icons\\aetheris\\000029_hr1.tex",
+						"ui/icon/000000/000030_hr1.tex": "menu icons\\aetheris\\000030_hr1.tex",
+						"ui/icon/000000/000031_hr1.tex": "menu icons\\aetheris\\000031_hr1.tex",
+						"ui/icon/000000/000032_hr1.tex": "menu icons\\aetheris\\000032_hr1.tex",
+						"ui/icon/000000/000033_hr1.tex": "menu icons\\aetheris\\000033_hr1.tex",
+						"ui/icon/000000/000034_hr1.tex": "menu icons\\aetheris\\000034_hr1.tex",
+						"ui/icon/000000/000035_hr1.tex": "menu icons\\aetheris\\000035_hr1.tex",
+						"ui/icon/000000/000036_hr1.tex": "menu icons\\aetheris\\000036_hr1.tex",
+						"ui/icon/000000/000037_hr1.tex": "menu icons\\aetheris\\000037_hr1.tex",
+						"ui/icon/000000/000038_hr1.tex": "menu icons\\aetheris\\000038_hr1.tex",
+						"ui/icon/000000/000039_hr1.tex": "menu icons\\aetheris\\000039_hr1.tex",
+						"ui/icon/000000/000040_hr1.tex": "menu icons\\aetheris\\000040_hr1.tex",
+						"ui/icon/000000/000041_hr1.tex": "menu icons\\aetheris\\000041_hr1.tex",
+						"ui/icon/000000/000042_hr1.tex": "menu icons\\aetheris\\000042_hr1.tex",
+						"ui/icon/000000/000043_hr1.tex": "menu icons\\aetheris\\000043_hr1.tex",
+						"ui/icon/000000/000044_hr1.tex": "menu icons\\aetheris\\000044_hr1.tex",
+						"ui/icon/000000/000045_hr1.tex": "menu icons\\aetheris\\000045_hr1.tex",
+						"ui/icon/000000/000046_hr1.tex": "menu icons\\aetheris\\000046_hr1.tex",
+						"ui/icon/000000/000047_hr1.tex": "menu icons\\aetheris\\000047_hr1.tex",
+						"ui/icon/000000/000048_hr1.tex": "menu icons\\aetheris\\000048_hr1.tex",
+						"ui/icon/000000/000049_hr1.tex": "menu icons\\aetheris\\000049_hr1.tex",
+						"ui/icon/000000/000050_hr1.tex": "menu icons\\aetheris\\000050_hr1.tex",
+						"ui/icon/000000/000051_hr1.tex": "menu icons\\aetheris\\000051_hr1.tex",
+						"ui/icon/000000/000052_hr1.tex": "menu icons\\aetheris\\000052_hr1.tex",
+						"ui/icon/000000/000053_hr1.tex": "menu icons\\aetheris\\000053_hr1.tex",
+						"ui/icon/000000/000054_hr1.tex": "menu icons\\aetheris\\000054_hr1.tex",
+						"ui/icon/000000/000055_hr1.tex": "menu icons\\aetheris\\000055_hr1.tex",
+						"ui/icon/000000/000056_hr1.tex": "menu icons\\aetheris\\000056_hr1.tex",
+						"ui/icon/000000/000057_hr1.tex": "menu icons\\aetheris\\000057_hr1.tex",
+						"ui/icon/000000/000058_hr1.tex": "menu icons\\aetheris\\000058_hr1.tex",
+						"ui/icon/000000/000059_hr1.tex": "menu icons\\aetheris\\000059_hr1.tex",
+						"ui/icon/000000/000060_hr1.tex": "menu icons\\aetheris\\000060_hr1.tex",
+						"ui/icon/000000/000061_hr1.tex": "menu icons\\aetheris\\000061_hr1.tex",
+						"ui/icon/000000/000062_hr1.tex": "menu icons\\aetheris\\000062_hr1.tex",
+						"ui/icon/000000/000063_hr1.tex": "menu icons\\aetheris\\000063_hr1.tex",
+						"ui/icon/000000/000064_hr1.tex": "menu icons\\aetheris\\000064_hr1.tex",
+						"ui/icon/000000/000065_hr1.tex": "menu icons\\aetheris\\000065_hr1.tex",
+						"ui/icon/000000/000066_hr1.tex": "menu icons\\aetheris\\000066_hr1.tex",
+						"ui/icon/000000/000067_hr1.tex": "menu icons\\aetheris\\000067_hr1.tex",
+						"ui/icon/000000/000068_hr1.tex": "menu icons\\aetheris\\000068_hr1.tex",
+						"ui/icon/000000/000069_hr1.tex": "menu icons\\aetheris\\000069_hr1.tex",
+						"ui/icon/000000/000070_hr1.tex": "menu icons\\aetheris\\000070_hr1.tex",
+						"ui/icon/000000/000071_hr1.tex": "menu icons\\aetheris\\000071_hr1.tex",
+						"ui/icon/000000/000072_hr1.tex": "menu icons\\aetheris\\000072_hr1.tex",
+						"ui/icon/000000/000073_hr1.tex": "menu icons\\aetheris\\000073_hr1.tex",
+						"ui/icon/000000/000074_hr1.tex": "menu icons\\aetheris\\000074_hr1.tex",
+						"ui/icon/000000/000075_hr1.tex": "menu icons\\aetheris\\000075_hr1.tex",
+						"ui/icon/000000/000076_hr1.tex": "menu icons\\aetheris\\000076_hr1.tex",
+						"ui/icon/000000/000077_hr1.tex": "menu icons\\aetheris\\000077_hr1.tex",
+						"ui/icon/000000/000078_hr1.tex": "menu icons\\aetheris\\000078_hr1.tex",
+						"ui/icon/000000/000079_hr1.tex": "menu icons\\aetheris\\000079_hr1.tex",
+						"ui/icon/000000/000080_hr1.tex": "menu icons\\aetheris\\000080_hr1.tex",
+						"ui/icon/000000/000081_hr1.tex": "menu icons\\aetheris\\000081_hr1.tex",
+						"ui/icon/000000/000082_hr1.tex": "menu icons\\aetheris\\000082_hr1.tex",
+						"ui/icon/000000/000083_hr1.tex": "menu icons\\aetheris\\000083_hr1.tex",
+						"ui/icon/000000/000084_hr1.tex": "menu icons\\aetheris\\000084_hr1.tex",
+						"ui/icon/000000/000085_hr1.tex": "menu icons\\aetheris\\000085_hr1.tex",
+						"ui/icon/000000/000086_hr1.tex": "menu icons\\aetheris\\000086_hr1.tex",
+						"ui/icon/000000/000087_hr1.tex": "menu icons\\aetheris\\000087_hr1.tex",
+						"ui/icon/000000/000088_hr1.tex": "menu icons\\aetheris\\000088_hr1.tex",
+						"ui/icon/000000/000089_hr1.tex": "menu icons\\aetheris\\000089_hr1.tex",
+						"ui/icon/000000/000090_hr1.tex": "menu icons\\aetheris\\000090_hr1.tex",
+						"ui/icon/000000/000091_hr1.tex": "menu icons\\aetheris\\000091_hr1.tex",
+						"ui/icon/000000/000092_hr1.tex": "menu icons\\aetheris\\000092_hr1.tex",
+						"ui/icon/000000/000093_hr1.tex": "menu icons\\aetheris\\000093_hr1.tex",
+						"ui/icon/000000/000094_hr1.tex": "menu icons\\aetheris\\000094_hr1.tex",
+						"ui/icon/000000/000095_hr1.tex": "menu icons\\aetheris\\000095_hr1.tex",
+						"ui/icon/000000/000096_hr1.tex": "menu icons\\aetheris\\000096_hr1.tex",
+						"ui/icon/000000/000097_hr1.tex": "menu icons\\aetheris\\000097_hr1.tex",
+						"ui/icon/000000/000651_hr1.tex": "menu icons\\aetheris\\000651_hr1.tex",
+						"ui/icon/000000/000652_hr1.tex": "menu icons\\aetheris\\000652_hr1.tex",
+						"ui/icon/000000/000654_hr1.tex": "menu icons\\aetheris\\000654_hr1.tex",
+						"ui/icon/061000/061103_hr1.tex": "menu icons\\aetheris\\061103_hr1.tex",
+						"ui/icon/061000/061104_hr1.tex": "menu icons\\aetheris\\061104_hr1.tex",
+						"ui/icon/061000/061105_hr1.tex": "menu icons\\aetheris\\061105_hr1.tex"
+					}
 				}
 			]
+		},
+		{
+			"Type": "Single",
+			"Id": "cb80c4af-078b-4b80-8947-f26ed435e081",
+			"Name": "Enmity Info",
+			"Layout": [
+				"Space"
+			],
+			"Priority": 7,
+			"Page": 1,
+			"ParentSetting": "260cc7ba-890a-4130-922a-f7b215bfdab3",
+			"Options": [
+				{
+					"Id": "54cec512-1f3d-4502-bb5b-cc815b3a05ae",
+					"Name": "Default",
+					"Files": {
+						"ui/uld/enemylist_hr1.tex": "base\\ui\\uld\\enemylist_hr1.tex"
+					}
+				},
+				{
+					"Id": "40ea974c-c534-40ca-98ef-d3ef60e21a04",
+					"Name": "ÆTHERIS Classic",
+					"Files": {
+						"ui/uld/enemylist_hr1.tex": "enmity\\enemylist_hr1-ae-classic.tex"
+					}
+				},
+				{
+					"Id": "c797664f-ff7a-496d-9e80-f00793c46d48",
+					"Name": "Filled Bar",
+					"Files": {
+						"ui/uld/enemylist_hr1.tex": "enmity\\enemylist_hr1-filled.tex"
+					}
+				},
+				{
+					"Id": "ea4b5fcb-9ca9-4e2b-938c-99c383707217",
+					"Name": "Solid Color Segments",
+					"Files": {
+						"ui/uld/enemylist_hr1.tex": "enmity\\enemylist_hr1-solid.tex"
+					}
+				},
+				{
+					"Id": "467ea579-7b60-48b2-9caf-e106e0694103",
+					"Name": "Multicolored Segments",
+					"Files": {
+						"ui/uld/enemylist_hr1.tex": "enmity\\enemylist_hr1-multi.tex"
+					}
+				}
+			]
+		},
+		{
+			"Type": "Multi",
+			"Id": "5bc8930d-e853-48d1-8367-9bc1613da7d4",
+			"Name": "Job Icons Group",
+			"DisplayName": "Job Icons",
+			"Priority": 8,
+			"Page": 1
 		},
 		{
 			"Type": "Single",
 			"Id": "75b186c6-067e-47a4-808b-6722bff5142b",
 			"Name": "Job Icons",
 			"Layout": [
-				"Hide"
+				"Hide",
+				"ParentHeader"
 			],
 			"Condition": {
 				"Type": "Not",
 				"Condition": {
 					"Type": "Setting",
-					"Setting": "6a791a84-d0e8-43c2-910f-513ac3bc883e"
+					"Setting": "52772f43-dbf3-4d97-be5e-9c5ae1a97158"
 				}
 			},
-			"Priority": 6,
-			"ParentSetting": "6a791a84-d0e8-43c2-910f-513ac3bc883e",
+			"Priority": 9,
+			"Page": 1,
+			"ParentSetting": "5bc8930d-e853-48d1-8367-9bc1613da7d4",
 			"Options": [
 				{
 					"Id": "01919316-54eb-4722-825a-0e9fb5016444",
@@ -910,14 +1186,16 @@
 			"Name": "Job Icons (Split DPS)",
 			"DisplayName": "Job Icons",
 			"Layout": [
-				"Hide"
+				"Hide",
+				"ParentHeader"
 			],
 			"Condition": {
 				"Type": "Setting",
-				"Setting": "6a791a84-d0e8-43c2-910f-513ac3bc883e"
+				"Setting": "52772f43-dbf3-4d97-be5e-9c5ae1a97158"
 			},
-			"Priority": 6,
-			"ParentSetting": "6a791a84-d0e8-43c2-910f-513ac3bc883e",
+			"Priority": 9,
+			"Page": 1,
+			"ParentSetting": "5bc8930d-e853-48d1-8367-9bc1613da7d4",
 			"Options": [
 				{
 					"Id": "179ae78e-6441-4551-82db-b66ee007fa95",
@@ -1229,47 +1507,89 @@
 			]
 		},
 		{
+			"Type": "Multi",
+			"Id": "ddebe358-cb5f-4013-8967-49a05347b081",
+			"Name": "Use Split Colors for DPS Classes",
+			"Layout": [
+				"Space"
+			],
+			"Priority": 10,
+			"Page": 1,
+			"ParentSetting": "5bc8930d-e853-48d1-8367-9bc1613da7d4",
+			"Options": [
+				{
+					"Id": "52772f43-dbf3-4d97-be5e-9c5ae1a97158",
+					"Name": "Enable"
+				}
+			]
+		},
+		{
+			"Type": "Multi",
+			"Id": "50d4e3d3-1d61-466c-9636-471db8089f9a",
+			"Name": "Icon Frame Group",
+			"DisplayName": "Icon Frame",
+			"Layout": [
+				"Space"
+			],
+			"Priority": 11,
+			"Page": 1
+		},
+		{
 			"Type": "Single",
 			"Id": "4c2126c8-8f0c-4a47-984d-2ff16d89a73f",
 			"Name": "Icon Frames",
+			"DisplayName": "Glow Color",
 			"Layout": [
 				"Hide"
 			],
 			"Condition": {
-				"Type": "Not",
-				"Condition": {
-					"Type": "Setting",
-					"Setting": "00425a12-8fee-4a51-8ba6-3be1d86278d6"
-				}
+				"Type": "And",
+				"Conditions": [
+					{
+						"Type": "Not",
+						"Condition": {
+							"Type": "Setting",
+							"Setting": "2918f6f9-c284-4f2b-89dc-e0da586ebf24"
+						}
+					},
+					{
+						"Type": "Not",
+						"Condition": {
+							"Type": "Setting",
+							"Setting": "91c08dba-115e-4869-9035-fb3eb261d954"
+						}
+					}
+				]
 			},
-			"Priority": 8,
-			"ParentSetting": "00425a12-8fee-4a51-8ba6-3be1d86278d6",
+			"Priority": 12,
+			"Page": 1,
+			"ParentSetting": "50d4e3d3-1d61-466c-9636-471db8089f9a",
 			"Options": [
 				{
 					"Id": "abdfcbcf-eef6-4e59-9045-edd55339642b",
 					"Name": "ÆTHERIS Blue",
 					"Files": {
-						"ui/uld/icona_recast_hr1.tex": "icon frames\\rounded\\icona_recast_hr1.tex",
-						"ui/uld/icona_frame_hr1.tex": "icon frames\\rounded\\Ætheris blue\\icona_frame_hr1.tex",
-						"ui/uld/icona_recast2_hr1.tex": "icon frames\\rounded\\Ætheris blue\\icona_recast2_hr1.tex"
+						"ui/uld/icona_recast_hr1.tex": "icon frames\\icona_recast_hr1-rounded.tex",
+						"ui/uld/icona_frame_hr1.tex": "icon frames\\aetheris blue\\icona_frame_hr1-rounded.tex",
+						"ui/uld/icona_recast2_hr1.tex": "icon frames\\aetheris blue\\icona_recast2_hr1-rounded.tex"
 					}
 				},
 				{
 					"Id": "9eb28413-840c-424b-ae7d-540d49e627e8",
-					"Name": "ÆTHERIS Pink",
+					"Name": "Pink",
 					"Files": {
-						"ui/uld/icona_recast_hr1.tex": "icon frames\\rounded\\icona_recast_hr1.tex",
-						"ui/uld/icona_frame_hr1.tex": "icon frames\\rounded\\Ætheris pink\\icona_frame_hr1.tex",
-						"ui/uld/icona_recast2_hr1.tex": "icon frames\\rounded\\Ætheris pink\\icona_recast2_hr1.tex"
+						"ui/uld/icona_recast_hr1.tex": "icon frames\\icona_recast_hr1-rounded.tex",
+						"ui/uld/icona_frame_hr1.tex": "icon frames\\pink\\icona_frame_hr1-rounded.tex",
+						"ui/uld/icona_recast2_hr1.tex": "icon frames\\pink\\icona_recast2_hr1-rounded.tex"
 					}
 				},
 				{
 					"Id": "b46f50c4-b1e6-4671-b724-d80e7e4c9efb",
-					"Name": "Default Yellow",
+					"Name": "Yellow",
 					"Files": {
-						"ui/uld/icona_recast_hr1.tex": "icon frames\\rounded\\icona_recast_hr1.tex",
-						"ui/uld/icona_frame_hr1.tex": "icon frames\\rounded\\original colors\\icona_frame_hr1.tex",
-						"ui/uld/icona_recast2_hr1.tex": "icon frames\\rounded\\original colors\\icona_recast2_hr1.tex"
+						"ui/uld/icona_recast_hr1.tex": "icon frames\\icona_recast_hr1-rounded.tex",
+						"ui/uld/icona_frame_hr1.tex": "icon frames\\yellow\\icona_frame_hr1-rounded.tex",
+						"ui/uld/icona_recast2_hr1.tex": "icon frames\\yellow\\icona_recast2_hr1-rounded.tex"
 					}
 				}
 			]
@@ -1278,310 +1598,194 @@
 			"Type": "Single",
 			"Id": "ed8a4356-d6ef-4c9e-9c10-48287d157eb0",
 			"Name": "Icon Frames (Square)",
-			"DisplayName": "Icon Frames",
+			"DisplayName": "Glow Color",
 			"Layout": [
 				"Hide"
 			],
 			"Condition": {
-				"Type": "Setting",
-				"Setting": "00425a12-8fee-4a51-8ba6-3be1d86278d6"
+				"Type": "And",
+				"Conditions": [
+					{
+						"Type": "Setting",
+						"Setting": "2918f6f9-c284-4f2b-89dc-e0da586ebf24"
+					},
+					{
+						"Type": "Not",
+						"Condition": {
+							"Type": "Setting",
+							"Setting": "91c08dba-115e-4869-9035-fb3eb261d954"
+						}
+					}
+				]
 			},
-			"Priority": 8,
-			"ParentSetting": "00425a12-8fee-4a51-8ba6-3be1d86278d6",
+			"Priority": 12,
+			"Page": 1,
+			"ParentSetting": "50d4e3d3-1d61-466c-9636-471db8089f9a",
 			"Options": [
 				{
 					"Id": "f128cad4-c819-4045-ba1d-1d21f32227ee",
 					"Name": "ÆTHERIS Blue",
 					"Files": {
-						"ui/uld/icona_recast_hr1.tex": "icon frames\\square\\icona_recast_hr1.tex",
-						"ui/uld/icona_frame_hr1.tex": "icon frames\\square\\Ætheris blue\\icona_frame_hr1.tex",
-						"ui/uld/icona_recast2_hr1.tex": "icon frames\\square\\Ætheris blue\\icona_recast2_hr1.tex"
+						"ui/uld/icona_recast_hr1.tex": "icon frames\\icona_recast_hr1-square.tex",
+						"ui/uld/icona_frame_hr1.tex": "icon frames\\aetheris blue\\icona_frame_hr1-square.tex",
+						"ui/uld/icona_recast2_hr1.tex": "icon frames\\aetheris blue\\icona_recast2_hr1-square.tex"
 					}
 				},
 				{
 					"Id": "eabe627c-1d1c-409e-93a3-4f92b3b7c270",
-					"Name": "ÆTHERIS Pink",
+					"Name": "Pink",
 					"Files": {
-						"ui/uld/icona_recast_hr1.tex": "icon frames\\square\\icona_recast_hr1.tex",
-						"ui/uld/icona_frame_hr1.tex": "icon frames\\square\\Ætheris pink\\icona_frame_hr1.tex",
-						"ui/uld/icona_recast2_hr1.tex": "icon frames\\square\\Ætheris pink\\icona_recast2_hr1.tex"
+						"ui/uld/icona_recast_hr1.tex": "icon frames\\icona_recast_hr1-square.tex",
+						"ui/uld/icona_frame_hr1.tex": "icon frames\\pink\\icona_frame_hr1-square.tex",
+						"ui/uld/icona_recast2_hr1.tex": "icon frames\\pink\\icona_recast2_hr1-square.tex"
 					}
 				},
 				{
 					"Id": "b71029be-a037-4015-ac74-76b45b2ed99f",
-					"Name": "Default Yellow",
+					"Name": "Yellow",
 					"Files": {
-						"ui/uld/icona_recast_hr1.tex": "icon frames\\square\\icona_recast_hr1.tex",
-						"ui/uld/icona_frame_hr1.tex": "icon frames\\square\\original colors\\icona_frame_hr1.tex",
-						"ui/uld/icona_recast2_hr1.tex": "icon frames\\square\\original colors\\icona_recast2_hr1.tex"
+						"ui/uld/icona_recast_hr1.tex": "icon frames\\icona_recast_hr1-square.tex",
+						"ui/uld/icona_frame_hr1.tex": "icon frames\\yellow\\icona_frame_hr1-square.tex",
+						"ui/uld/icona_recast2_hr1.tex": "icon frames\\yellow\\icona_recast2_hr1-square.tex"
 					}
 				}
 			]
 		},
 		{
 			"Type": "Single",
-			"Id": "cb80c4af-078b-4b80-8947-f26ed435e081",
-			"Name": "Enmity Info",
-			"Priority": 9,
-			"ParentSetting": "260cc7ba-890a-4130-922a-f7b215bfdab3",
-			"Options": [
-				{
-					"Id": "54cec512-1f3d-4502-bb5b-cc815b3a05ae",
-					"Name": "Default"
-				},
-				{
-					"Id": "40ea974c-c534-40ca-98ef-d3ef60e21a04",
-					"Name": "ÆTHERIS Classic",
-					"Files": {
-						"ui/uld/enemylist_hr1.tex": "enmity\\ae-classic-enemylist_hr1.tex"
-					}
-				},
-				{
-					"Id": "c797664f-ff7a-496d-9e80-f00793c46d48",
-					"Name": "Filled Bar",
-					"Files": {
-						"ui/uld/enemylist_hr1.tex": "enmity\\filled-enemylist_hr1.tex"
-					}
-				},
-				{
-					"Id": "ea4b5fcb-9ca9-4e2b-938c-99c383707217",
-					"Name": "Solid Color Segments",
-					"Files": {
-						"ui/uld/enemylist_hr1.tex": "enmity\\solid-enemylist_hr1.tex"
-					}
-				},
-				{
-					"Id": "467ea579-7b60-48b2-9caf-e106e0694103",
-					"Name": "Multicolored Segments",
-					"Files": {
-						"ui/uld/enemylist_hr1.tex": "enmity\\multi-enemylist_hr1.tex"
-					}
-				}
-			]
-		},
-		{
-			"Type": "Single",
-			"Id": "fa4abe54-b904-4717-92ae-7c7ba4de1467",
-			"Name": "Menu Icons",
+			"Id": "f89e5eda-13f8-43e7-acf1-c882e60f2a89",
+			"Name": "Icon Frames (White)",
+			"DisplayName": "Glow Color",
 			"Layout": [
-				"Space"
+				"Hide"
 			],
-			"Priority": 4,
-			"ParentSetting": "260cc7ba-890a-4130-922a-f7b215bfdab3",
+			"Condition": {
+				"Type": "And",
+				"Conditions": [
+					{
+						"Type": "Not",
+						"Condition": {
+							"Type": "Setting",
+							"Setting": "2918f6f9-c284-4f2b-89dc-e0da586ebf24"
+						}
+					},
+					{
+						"Type": "Setting",
+						"Setting": "91c08dba-115e-4869-9035-fb3eb261d954"
+					}
+				]
+			},
+			"Priority": 12,
+			"Page": 1,
+			"ParentSetting": "50d4e3d3-1d61-466c-9636-471db8089f9a",
 			"Options": [
 				{
-					"Id": "484e635f-d23e-4be1-84ed-2a0b6047f4bf",
-					"Name": "Default"
-				},
-				{
-					"Id": "0127d729-780e-4dbf-bba1-e1a9fdbaaad3",
-					"Name": "Dark + White (Enclave)",
+					"Id": "0997a0d7-eb6c-4703-9a87-ebc2ef760d36",
+					"Name": "ÆTHERIS Blue",
 					"Files": {
-						"ui/icon/000000/000001_hr1.tex": "menu icons\\black+white\\ui\\000001_hr1.tex",
-						"ui/icon/000000/000010_hr1.tex": "menu icons\\black+white\\ui\\mainicon10.tex",
-						"ui/icon/000000/000011_hr1.tex": "menu icons\\black+white\\ui\\mainicon11.tex",
-						"ui/icon/000000/000013_hr1.tex": "menu icons\\black+white\\ui\\mainicon13.tex",
-						"ui/icon/000000/000016_hr1.tex": "menu icons\\black+white\\ui\\mainicon16.tex",
-						"ui/icon/000000/000017_hr1.tex": "menu icons\\black+white\\ui\\mainicon17.tex",
-						"ui/icon/000000/000018_hr1.tex": "menu icons\\black+white\\ui\\mainicon18.tex",
-						"ui/icon/000000/000019_hr1.tex": "menu icons\\black+white\\ui\\mainicon19.tex",
-						"ui/icon/000000/000002_hr1.tex": "menu icons\\black+white\\ui\\mainicon2.tex",
-						"ui/icon/000000/000020_hr1.tex": "menu icons\\black+white\\ui\\mainicon20.tex",
-						"ui/icon/000000/000021_hr1.tex": "menu icons\\black+white\\ui\\mainicon21.tex",
-						"ui/icon/000000/000022_hr1.tex": "menu icons\\black+white\\ui\\mainicon22.tex",
-						"ui/icon/000000/000023_hr1.tex": "menu icons\\black+white\\ui\\mainicon23.tex",
-						"ui/icon/000000/000024_hr1.tex": "menu icons\\black+white\\ui\\mainicon24.tex",
-						"ui/icon/000000/000025_hr1.tex": "menu icons\\black+white\\ui\\mainicon25.tex",
-						"ui/icon/000000/000026_hr1.tex": "menu icons\\black+white\\ui\\mainicon26.tex",
-						"ui/icon/000000/000027_hr1.tex": "menu icons\\black+white\\ui\\mainicon27.tex",
-						"ui/icon/000000/000028_hr1.tex": "menu icons\\black+white\\ui\\mainicon28.tex",
-						"ui/icon/000000/000029_hr1.tex": "menu icons\\black+white\\ui\\mainicon29.tex",
-						"ui/icon/000000/000003_hr1.tex": "menu icons\\black+white\\ui\\mainicon3.tex",
-						"ui/icon/000000/000030_hr1.tex": "menu icons\\black+white\\ui\\mainicon30.tex",
-						"ui/icon/000000/000031_hr1.tex": "menu icons\\black+white\\ui\\mainicon31.tex",
-						"ui/icon/000000/000032_hr1.tex": "menu icons\\black+white\\ui\\mainicon32.tex",
-						"ui/icon/000000/000033_hr1.tex": "menu icons\\black+white\\ui\\mainicon33.tex",
-						"ui/icon/000000/000035_hr1.tex": "menu icons\\black+white\\ui\\mainicon35.tex",
-						"ui/icon/000000/000036_hr1.tex": "menu icons\\black+white\\ui\\mainicon36.tex",
-						"ui/icon/000000/000037_hr1.tex": "menu icons\\black+white\\ui\\mainicon37.tex",
-						"ui/icon/000000/000038_hr1.tex": "menu icons\\black+white\\ui\\mainicon38.tex",
-						"ui/icon/000000/000039_hr1.tex": "menu icons\\black+white\\ui\\mainicon39.tex",
-						"ui/icon/000000/000004_hr1.tex": "menu icons\\black+white\\ui\\mainicon4.tex",
-						"ui/icon/000000/000041_hr1.tex": "menu icons\\black+white\\ui\\mainicon41.tex",
-						"ui/icon/000000/000042_hr1.tex": "menu icons\\black+white\\ui\\mainicon42.tex",
-						"ui/icon/000000/000043_hr1.tex": "menu icons\\black+white\\ui\\mainicon43.tex",
-						"ui/icon/000000/000044_hr1.tex": "menu icons\\black+white\\ui\\mainicon44.tex",
-						"ui/icon/000000/000045_hr1.tex": "menu icons\\black+white\\ui\\mainicon45.tex",
-						"ui/icon/000000/000046_hr1.tex": "menu icons\\black+white\\ui\\mainicon46.tex",
-						"ui/icon/000000/000047_hr1.tex": "menu icons\\black+white\\ui\\mainicon47.tex",
-						"ui/icon/000000/000048_hr1.tex": "menu icons\\black+white\\ui\\mainicon48.tex",
-						"ui/icon/000000/000049_hr1.tex": "menu icons\\black+white\\ui\\mainicon49.tex",
-						"ui/icon/000000/000005_hr1.tex": "menu icons\\black+white\\ui\\mainicon5.tex",
-						"ui/icon/000000/000050_hr1.tex": "menu icons\\black+white\\ui\\mainicon50.tex",
-						"ui/icon/000000/000051_hr1.tex": "menu icons\\black+white\\ui\\mainicon51.tex",
-						"ui/icon/000000/000052_hr1.tex": "menu icons\\black+white\\ui\\mainicon52.tex",
-						"ui/icon/000000/000053_hr1.tex": "menu icons\\black+white\\ui\\mainicon53.tex",
-						"ui/icon/000000/000054_hr1.tex": "menu icons\\black+white\\ui\\mainicon54.tex",
-						"ui/icon/000000/000055_hr1.tex": "menu icons\\black+white\\ui\\mainicon55.tex",
-						"ui/icon/000000/000056_hr1.tex": "menu icons\\black+white\\ui\\mainicon56.tex",
-						"ui/icon/000000/000057_hr1.tex": "menu icons\\black+white\\ui\\mainicon57.tex",
-						"ui/icon/000000/000058_hr1.tex": "menu icons\\black+white\\ui\\mainicon58.tex",
-						"ui/icon/000000/000059_hr1.tex": "menu icons\\black+white\\ui\\mainicon59.tex",
-						"ui/icon/000000/000006_hr1.tex": "menu icons\\black+white\\ui\\mainicon6.tex",
-						"ui/icon/000000/000060_hr1.tex": "menu icons\\black+white\\ui\\mainicon60.tex",
-						"ui/icon/000000/000061_hr1.tex": "menu icons\\black+white\\ui\\mainicon61.tex",
-						"ui/icon/000000/000062_hr1.tex": "menu icons\\black+white\\ui\\mainicon62.tex",
-						"ui/icon/000000/000063_hr1.tex": "menu icons\\black+white\\ui\\mainicon63.tex",
-						"ui/icon/000000/000064_hr1.tex": "menu icons\\black+white\\ui\\mainicon64.tex",
-						"ui/icon/000000/000065_hr1.tex": "menu icons\\black+white\\ui\\mainicon65.tex",
-						"ui/icon/000000/000066_hr1.tex": "menu icons\\black+white\\ui\\mainicon66.tex",
-						"ui/icon/000000/000067_hr1.tex": "menu icons\\black+white\\ui\\mainicon67.tex",
-						"ui/icon/000000/000068_hr1.tex": "menu icons\\black+white\\ui\\mainicon68.tex",
-						"ui/icon/000000/000069_hr1.tex": "menu icons\\black+white\\ui\\mainicon69.tex",
-						"ui/icon/000000/000007_hr1.tex": "menu icons\\black+white\\ui\\mainicon7.tex",
-						"ui/icon/000000/000070_hr1.tex": "menu icons\\black+white\\ui\\mainicon70.tex",
-						"ui/icon/000000/000071_hr1.tex": "menu icons\\black+white\\ui\\mainicon71.tex",
-						"ui/icon/000000/000072_hr1.tex": "menu icons\\black+white\\ui\\mainicon72.tex",
-						"ui/icon/000000/000073_hr1.tex": "menu icons\\black+white\\ui\\mainicon73.tex",
-						"ui/icon/000000/000074_hr1.tex": "menu icons\\black+white\\ui\\mainicon74.tex",
-						"ui/icon/000000/000075_hr1.tex": "menu icons\\black+white\\ui\\mainicon75.tex",
-						"ui/icon/000000/000076_hr1.tex": "menu icons\\black+white\\ui\\mainicon76.tex",
-						"ui/icon/000000/000077_hr1.tex": "menu icons\\black+white\\ui\\mainicon77.tex",
-						"ui/icon/000000/000078_hr1.tex": "menu icons\\black+white\\ui\\mainicon78.tex",
-						"ui/icon/000000/000079_hr1.tex": "menu icons\\black+white\\ui\\mainicon79.tex",
-						"ui/icon/000000/000008_hr1.tex": "menu icons\\black+white\\ui\\mainicon8.tex",
-						"ui/icon/000000/000080_hr1.tex": "menu icons\\black+white\\ui\\mainicon80.tex",
-						"ui/icon/000000/000081_hr1.tex": "menu icons\\black+white\\ui\\mainicon81.tex",
-						"ui/icon/000000/000082_hr1.tex": "menu icons\\black+white\\ui\\mainicon82.tex",
-						"ui/icon/000000/000083_hr1.tex": "menu icons\\black+white\\ui\\mainicon83.tex",
-						"ui/icon/000000/000084_hr1.tex": "menu icons\\black+white\\ui\\mainicon84.tex",
-						"ui/icon/000000/000085_hr1.tex": "menu icons\\black+white\\ui\\mainicon85.tex",
-						"ui/icon/000000/000086_hr1.tex": "menu icons\\black+white\\ui\\mainicon86.tex",
-						"ui/icon/000000/000087_hr1.tex": "menu icons\\black+white\\ui\\mainicon87.tex",
-						"ui/icon/000000/000088_hr1.tex": "menu icons\\black+white\\ui\\mainicon88.tex",
-						"ui/icon/000000/000089_hr1.tex": "menu icons\\black+white\\ui\\mainicon89.tex",
-						"ui/icon/000000/000009_hr1.tex": "menu icons\\black+white\\ui\\mainicon9.tex",
-						"ui/icon/000000/000090_hr1.tex": "menu icons\\black+white\\ui\\mainicon90.tex",
-						"ui/icon/000000/000091_hr1.tex": "menu icons\\black+white\\ui\\mainicon91.tex",
-						"ui/icon/000000/000092_hr1.tex": "menu icons\\black+white\\ui\\mainicon92.tex",
-						"ui/icon/000000/000093_hr1.tex": "menu icons\\black+white\\ui\\mainicon93.tex",
-						"ui/icon/000000/000094_hr1.tex": "menu icons\\black+white\\ui\\mainicon94.tex",
-						"ui/icon/000000/000095_hr1.tex": "menu icons\\black+white\\ui\\mainicon95.tex",
-						"ui/icon/000000/000096_hr1.tex": "menu icons\\black+white\\ui\\mainicon96.tex",
-						"ui/icon/000000/000097_hr1.tex": "menu icons\\black+white\\ui\\mainicon97.tex",
-						"ui/icon/061000/061103_hr1.tex": "menu icons\\black+white\\ui\\mainicon46.tex",
-						"ui/icon/061000/061104_hr1.tex": "menu icons\\black+white\\ui\\061104_hr1.tex",
-						"ui/icon/061000/061105_hr1.tex": "menu icons\\black+white\\ui\\061105_hr1.tex"
+						"ui/uld/icona_recast_hr1.tex": "icon frames\\icona_recast_hr1-rounded-white.tex",
+						"ui/uld/icona_frame_hr1.tex": "icon frames\\aetheris blue\\icona_frame_hr1-rounded-white.tex",
+						"ui/uld/icona_recast2_hr1.tex": "icon frames\\aetheris blue\\icona_recast2_hr1-rounded.tex",
+						"ui/uld/actioncontents_hr1.tex": "icon frames\\actioncontents_hr1-rounded-white.tex"
 					}
 				},
 				{
-					"Id": "29156f6c-bbdc-4a41-937c-984bc74ccd3c",
-					"Name": "ÆTHERIS-Themed (Dark + Light)",
+					"Id": "a957075e-e467-4f65-ac6d-4e6ea2f775d5",
+					"Name": "Pink",
 					"Files": {
-						"ui/icon/000000/000001_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000001_hr1.tex",
-						"ui/icon/000000/000002_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000002_hr1.tex",
-						"ui/icon/000000/000003_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000003_hr1.tex",
-						"ui/icon/000000/000004_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000004_hr1.tex",
-						"ui/icon/000000/000005_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000005_hr1.tex",
-						"ui/icon/000000/000006_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000006_hr1.tex",
-						"ui/icon/000000/000007_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000007_hr1.tex",
-						"ui/icon/000000/000008_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000008_hr1.tex",
-						"ui/icon/000000/000009_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000009_hr1.tex",
-						"ui/icon/000000/000010_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000010_hr1.tex",
-						"ui/icon/000000/000011_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000011_hr1.tex",
-						"ui/icon/000000/000012_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000012_hr1.tex",
-						"ui/icon/000000/000013_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000013_hr1.tex",
-						"ui/icon/000000/000014_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000014_hr1.tex",
-						"ui/icon/000000/000015_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000015_hr1.tex",
-						"ui/icon/000000/000016_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000016_hr1.tex",
-						"ui/icon/000000/000017_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000017_hr1.tex",
-						"ui/icon/000000/000018_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000018_hr1.tex",
-						"ui/icon/000000/000019_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000019_hr1.tex",
-						"ui/icon/000000/000020_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000020_hr1.tex",
-						"ui/icon/000000/000021_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000021_hr1.tex",
-						"ui/icon/000000/000022_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000022_hr1.tex",
-						"ui/icon/000000/000023_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000023_hr1.tex",
-						"ui/icon/000000/000024_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000024_hr1.tex",
-						"ui/icon/000000/000025_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000025_hr1.tex",
-						"ui/icon/000000/000026_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000026_hr1.tex",
-						"ui/icon/000000/000027_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000027_hr1.tex",
-						"ui/icon/000000/000028_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000028_hr1.tex",
-						"ui/icon/000000/000029_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000029_hr1.tex",
-						"ui/icon/000000/000030_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000030_hr1.tex",
-						"ui/icon/000000/000031_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000031_hr1.tex",
-						"ui/icon/000000/000032_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000032_hr1.tex",
-						"ui/icon/000000/000033_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000033_hr1.tex",
-						"ui/icon/000000/000034_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000034_hr1.tex",
-						"ui/icon/000000/000035_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000035_hr1.tex",
-						"ui/icon/000000/000036_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000036_hr1.tex",
-						"ui/icon/000000/000037_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000037_hr1.tex",
-						"ui/icon/000000/000038_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000038_hr1.tex",
-						"ui/icon/000000/000039_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000039_hr1.tex",
-						"ui/icon/000000/000040_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000040_hr1.tex",
-						"ui/icon/000000/000041_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000041_hr1.tex",
-						"ui/icon/000000/000042_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000042_hr1.tex",
-						"ui/icon/000000/000043_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000043_hr1.tex",
-						"ui/icon/000000/000044_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000044_hr1.tex",
-						"ui/icon/000000/000045_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000045_hr1.tex",
-						"ui/icon/000000/000046_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000046_hr1.tex",
-						"ui/icon/000000/000047_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000047_hr1.tex",
-						"ui/icon/000000/000048_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000048_hr1.tex",
-						"ui/icon/000000/000049_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000049_hr1.tex",
-						"ui/icon/000000/000050_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000050_hr1.tex",
-						"ui/icon/000000/000051_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000051_hr1.tex",
-						"ui/icon/000000/000052_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000052_hr1.tex",
-						"ui/icon/000000/000053_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000053_hr1.tex",
-						"ui/icon/000000/000054_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000054_hr1.tex",
-						"ui/icon/000000/000055_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000055_hr1.tex",
-						"ui/icon/000000/000056_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000056_hr1.tex",
-						"ui/icon/000000/000057_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000057_hr1.tex",
-						"ui/icon/000000/000058_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000058_hr1.tex",
-						"ui/icon/000000/000059_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000059_hr1.tex",
-						"ui/icon/000000/000060_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000060_hr1.tex",
-						"ui/icon/000000/000061_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000061_hr1.tex",
-						"ui/icon/000000/000062_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000062_hr1.tex",
-						"ui/icon/000000/000063_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000063_hr1.tex",
-						"ui/icon/000000/000064_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000064_hr1.tex",
-						"ui/icon/000000/000065_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000065_hr1.tex",
-						"ui/icon/000000/000066_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000066_hr1.tex",
-						"ui/icon/000000/000067_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000067_hr1.tex",
-						"ui/icon/000000/000068_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000068_hr1.tex",
-						"ui/icon/000000/000069_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000069_hr1.tex",
-						"ui/icon/000000/000070_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000070_hr1.tex",
-						"ui/icon/000000/000071_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000071_hr1.tex",
-						"ui/icon/000000/000072_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000072_hr1.tex",
-						"ui/icon/000000/000073_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000073_hr1.tex",
-						"ui/icon/000000/000074_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000074_hr1.tex",
-						"ui/icon/000000/000075_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000075_hr1.tex",
-						"ui/icon/000000/000076_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000076_hr1.tex",
-						"ui/icon/000000/000077_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000077_hr1.tex",
-						"ui/icon/000000/000078_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000078_hr1.tex",
-						"ui/icon/000000/000079_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000079_hr1.tex",
-						"ui/icon/000000/000080_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000080_hr1.tex",
-						"ui/icon/000000/000081_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000081_hr1.tex",
-						"ui/icon/000000/000082_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000082_hr1.tex",
-						"ui/icon/000000/000083_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000083_hr1.tex",
-						"ui/icon/000000/000084_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000084_hr1.tex",
-						"ui/icon/000000/000085_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000085_hr1.tex",
-						"ui/icon/000000/000086_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000086_hr1.tex",
-						"ui/icon/000000/000087_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000087_hr1.tex",
-						"ui/icon/000000/000088_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000088_hr1.tex",
-						"ui/icon/000000/000089_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000089_hr1.tex",
-						"ui/icon/000000/000090_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000090_hr1.tex",
-						"ui/icon/000000/000091_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000091_hr1.tex",
-						"ui/icon/000000/000092_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000092_hr1.tex",
-						"ui/icon/000000/000093_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000093_hr1.tex",
-						"ui/icon/000000/000094_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000094_hr1.tex",
-						"ui/icon/000000/000095_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000095_hr1.tex",
-						"ui/icon/000000/000096_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000096_hr1.tex",
-						"ui/icon/000000/000097_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000097_hr1.tex",
-						"ui/icon/000000/000651_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000651_hr1.tex",
-						"ui/icon/000000/000652_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000652_hr1.tex",
-						"ui/icon/000000/000654_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\000654_hr1.tex",
-						"ui/icon/061000/061103_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\061103_hr1.tex",
-						"ui/icon/061000/061104_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\061104_hr1.tex",
-						"ui/icon/061000/061105_hr1.tex": "menu icons\\Ætheris\\ui\\icon\\000000\\061105_hr1.tex"
+						"ui/uld/icona_recast_hr1.tex": "icon frames\\icona_recast_hr1-rounded-white.tex",
+						"ui/uld/icona_frame_hr1.tex": "icon frames\\pink\\icona_frame_hr1-rounded-white.tex",
+						"ui/uld/icona_recast2_hr1.tex": "icon frames\\pink\\icona_recast2_hr1-rounded.tex",
+						"ui/uld/actioncontents_hr1.tex": "icon frames\\actioncontents_hr1-rounded-white.tex"
 					}
+				},
+				{
+					"Id": "811887a0-2475-4d00-aca0-8fa870a65fc2",
+					"Name": "Yellow",
+					"Files": {
+						"ui/uld/icona_recast_hr1.tex": "icon frames\\icona_recast_hr1-rounded-white.tex",
+						"ui/uld/icona_frame_hr1.tex": "icon frames\\yellow\\icona_frame_hr1-rounded-white.tex",
+						"ui/uld/icona_recast2_hr1.tex": "icon frames\\yellow\\icona_recast2_hr1-rounded.tex",
+						"ui/uld/actioncontents_hr1.tex": "icon frames\\actioncontents_hr1-rounded-white.tex"
+					}
+				}
+			]
+		},
+		{
+			"Type": "Single",
+			"Id": "f381e7a9-78ca-462a-98e9-fa886b490ff3",
+			"Name": "Icon Frames (White Square)",
+			"DisplayName": "Glow Color",
+			"Layout": [
+				"Hide"
+			],
+			"Condition": {
+				"Type": "And",
+				"Conditions": [
+					{
+						"Type": "Setting",
+						"Setting": "2918f6f9-c284-4f2b-89dc-e0da586ebf24"
+					},
+					{
+						"Type": "Setting",
+						"Setting": "91c08dba-115e-4869-9035-fb3eb261d954"
+					}
+				]
+			},
+			"Priority": 12,
+			"Page": 1,
+			"ParentSetting": "50d4e3d3-1d61-466c-9636-471db8089f9a",
+			"Options": [
+				{
+					"Id": "21824d0c-b91a-4f52-a5c0-60aac6838f89",
+					"Name": "ÆTHERIS Blue",
+					"Files": {
+						"ui/uld/icona_recast_hr1.tex": "icon frames\\icona_recast_hr1-square-white.tex",
+						"ui/uld/icona_frame_hr1.tex": "icon frames\\aetheris blue\\icona_frame_hr1-square-white.tex",
+						"ui/uld/icona_recast2_hr1.tex": "icon frames\\aetheris blue\\icona_recast2_hr1-square.tex",
+						"ui/uld/actioncontents_hr1.tex": "icon frames\\actioncontents_hr1-square-white.tex"
+					}
+				},
+				{
+					"Id": "76ad53bd-5c2d-4c98-b868-976041e4c5fe",
+					"Name": "Pink",
+					"Files": {
+						"ui/uld/icona_recast_hr1.tex": "icon frames\\icona_recast_hr1-square-white.tex",
+						"ui/uld/icona_frame_hr1.tex": "icon frames\\pink\\icona_frame_hr1-square-white.tex",
+						"ui/uld/icona_recast2_hr1.tex": "icon frames\\pink\\icona_recast2_hr1-square.tex",
+						"ui/uld/actioncontents_hr1.tex": "icon frames\\actioncontents_hr1-square-white.tex"
+					}
+				},
+				{
+					"Id": "bc41741f-429d-4665-a644-0d85c239a115",
+					"Name": "Yellow",
+					"Files": {
+						"ui/uld/icona_recast_hr1.tex": "icon frames\\icona_recast_hr1-square-white.tex",
+						"ui/uld/icona_frame_hr1.tex": "icon frames\\yellow\\icona_frame_hr1-square-white.tex",
+						"ui/uld/icona_recast2_hr1.tex": "icon frames\\yellow\\icona_recast2_hr1-square.tex",
+						"ui/uld/actioncontents_hr1.tex": "icon frames\\actioncontents_hr1-square-white.tex"
+					}
+				}
+			]
+		},
+		{
+			"Type": "Multi",
+			"Id": "e9b00fbb-ba40-47e6-86c7-fd2c2c7b873d",
+			"Name": "Icon Frames Options Group",
+			"Layout": [
+				"ParentHeader"
+			],
+			"Priority": 13,
+			"Page": 1,
+			"ParentSetting": "50d4e3d3-1d61-466c-9636-471db8089f9a",
+			"Options": [
+				{
+					"Id": "2918f6f9-c284-4f2b-89dc-e0da586ebf24",
+					"Name": "Square Frames"
+				},
+				{
+					"Id": "91c08dba-115e-4869-9035-fb3eb261d954",
+					"Name": "White Frames"
 				}
 			]
 		},
@@ -1589,10 +1793,8 @@
 			"Type": "Multi",
 			"Id": "d4fcc251-f43b-463c-863e-53fba6f34eb5",
 			"Name": "Additional Options",
-			"Layout": [
-				"Space"
-			],
-			"Priority": 11,
+			"Priority": 14,
+			"Page": 2,
 			"DefaultSettings": 12,
 			"Options": [
 				{
@@ -1704,33 +1906,37 @@
 			"Type": "Single",
 			"Id": "2d4369cd-2188-44f8-b590-19052a24d246",
 			"Name": "Dialogue Boxes",
-			"Priority": 10,
+			"Layout": [
+				"Space"
+			],
+			"Priority": 15,
+			"Page": 2,
 			"ParentSetting": "d4fcc251-f43b-463c-863e-53fba6f34eb5",
 			"Options": [
 				{
 					"Id": "a9993835-e64e-48cd-b70c-c47a0dd870d4",
-					"Name": "ÆTHERIS Design",
+					"Name": "ÆTHERIS",
 					"Files": {
-						"ui/uld/battletalk_hr1.tex": "dialogue boxes\\ae new\\battletalk_hr1.tex",
-						"ui/uld/talk_basic_hr1.tex": "dialogue boxes\\ae new\\talk_basic_hr1.tex",
-						"ui/uld/talk_other_hr1.tex": "dialogue boxes\\ae new\\talk_other_hr1.tex"
+						"ui/uld/battletalk_hr1.tex": "dialogue boxes\\aetheris\\battletalk_hr1.tex",
+						"ui/uld/talk_basic_hr1.tex": "dialogue boxes\\aetheris\\talk_basic_hr1.tex",
+						"ui/uld/talk_other_hr1.tex": "dialogue boxes\\aetheris\\talk_other_hr1.tex"
 					}
 				},
 				{
 					"Id": "8ae4496b-d935-4c27-b152-c581a150aff1",
-					"Name": "ÆTHERIS Classic Design",
+					"Name": "ÆTHERIS Classic",
 					"Files": {
-						"ui/uld/battletalk_hr1.tex": "dialogue boxes\\ae classic\\battletalk_hr1.tex",
-						"ui/uld/talk_basic_hr1.tex": "dialogue boxes\\ae classic\\talk_basic_hr1.tex",
-						"ui/uld/talk_other_hr1.tex": "dialogue boxes\\ae classic\\talk_other_hr1.tex"
+						"ui/uld/battletalk_hr1.tex": "dialogue boxes\\aetheris classic\\battletalk_hr1.tex",
+						"ui/uld/talk_basic_hr1.tex": "dialogue boxes\\aetheris classic\\talk_basic_hr1.tex",
+						"ui/uld/talk_other_hr1.tex": "dialogue boxes\\aetheris classic\\talk_other_hr1.tex"
 					}
 				},
 				{
 					"Id": "cffad136-8bad-4de9-ad15-6447c66e4e00",
-					"Name": "Default Design",
+					"Name": "Default",
 					"Files": {
-						"ui/uld/battletalk_hr1.tex": "dialogue boxes\\ffxiv og\\battletalk_hr1.tex",
-						"ui/uld/talk_other_hr1.tex": "dialogue boxes\\ffxiv og\\talk_other_hr1.tex"
+						"ui/uld/battletalk_hr1.tex": "dialogue boxes\\original\\battletalk_hr1.tex",
+						"ui/uld/talk_other_hr1.tex": "dialogue boxes\\original\\talk_other_hr1.tex"
 					}
 				}
 			]
@@ -1739,8 +1945,8 @@
 			"Type": "Single",
 			"Id": "426cbd3e-98ba-4a7d-938f-bca977e55618",
 			"Name": "Active Window",
-			"Priority": 12,
-			"ParentSetting": "d4fcc251-f43b-463c-863e-53fba6f34eb5",
+			"Priority": 16,
+			"Page": 2,
 			"Options": [
 				{
 					"Id": "382fa0dc-d7ed-43f8-8819-e5a286327b71",
